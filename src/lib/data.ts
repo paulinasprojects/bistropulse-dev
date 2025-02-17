@@ -1,3 +1,5 @@
+import { v4 as uuidv4 } from "uuid";
+
 import {
   BikeIcon,
   HomeIcon,
@@ -5,6 +7,10 @@ import {
   UsersIcon,
   Book,
   Megaphone,
+  Package,
+  PackageX,
+  PackageCheck,
+  PackagePlus,
 } from "lucide-react";
 
 export const sidebarItems = [
@@ -42,5 +48,40 @@ export const sidebarItems = [
     title: "Employees Management",
     href: "/employees-management",
     icon: UsersIcon,
+  },
+];
+
+export const homepageOrders = [
+  {
+    id: uuidv4(),
+    title: "Active Orders",
+    count: 2390,
+    icon: Package,
+    bg: "[#e1f6eb]",
+    text: "[#39c272]",
+  },
+  {
+    id: uuidv4(),
+    title: "Pending Orders",
+    count: 2770,
+    icon: PackagePlus,
+    bg: "[#dfeff3]",
+    text: "[#2796ae]",
+  },
+  {
+    id: uuidv4(),
+    title: "Delivered Orders",
+    count: 3870,
+    icon: PackageCheck,
+    bg: "[#feefe0]",
+    text: "[#f69133]",
+  },
+  {
+    id: uuidv4(),
+    title: "Returned Orders",
+    count: 550,
+    icon: PackageX,
+    bg: "[#fde4e6]",
+    text: "[#f04d58]",
   },
 ];
