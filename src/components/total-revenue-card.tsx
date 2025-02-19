@@ -12,6 +12,8 @@ import {
   ChartTooltip,
   ChartTooltipContent
 } from '@/components/ui/chart';
+import Image from 'next/image';
+import { TotalRevenueDropdownMenu } from './total-revenue-dropdown-menu';
 
 const chartData = [
   {
@@ -63,14 +65,40 @@ export function TotalRevenueCard() {
     <Card className='xl:max-w-[648px] lg:w-full'>
       <CardContent className='mt-[27px]'>
         <div className="flex justify-between">
-        <CardHeading
-          title='Total Revenue'
-        />
-        <button className='text-sm'>Daily</button>
+          <CardHeading
+            title='Total Revenue'
+          />
+          <TotalRevenueDropdownMenu/>
+        </div>
+        <div className="flex items-center justify-between mt-7 mx-6">
+          <div className="flex gap-4">
+            <Image
+              src="https://res.cloudinary.com/dymlzmyuo/image/upload/v1739963631/Group_5691_hbxh6r.png"
+              alt='income-image'
+              width={45}
+              height={43}
+            />
+            <div className="flex flex-col gap-1">
+              <span className='text-[16px] font-normal text-[#6F767E] leading-[20px]'>Income</span>
+              <span className='xl:text-3xl md:text-2xl font-bold leading-[38px] text-[#111315]'>$1,390,39</span>
+            </div>
+          </div>
+          <div className="flex gap-4">
+            <Image
+              src="https://res.cloudinary.com/dymlzmyuo/image/upload/v1739963766/Group_5691_1_nlhqim.png"
+              alt='expense-image'
+              width={45}
+              height={43}
+            />
+            <div className="flex flex-col gap-1">
+              <span className='text-[16px] font-normal text-[#6F767E] leading-[20px]'>Expenses</span>
+              <span className='xl:text-3xl md:text-2xl font-bold leading-[38px] text-[#111315]'>$1,390,39</span>
+            </div>
+          </div>
         </div>
         <ChartContainer 
           config={chartConfig} 
-          className=' mt-5'>
+          className='mt-9'>
           <LineChart
             accessibilityLayer
             data={chartData}
