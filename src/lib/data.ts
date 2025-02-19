@@ -81,3 +81,66 @@ export const homepageOrders = [
     className: "bg-[#fde4e6] text-[#f04d58]",
   },
 ];
+
+export const recentOrdersRequestsData = [
+  {
+    orderId: "B13789",
+    date: "Feb 08, 2025",
+    customer: "Dianne Russell",
+    customerImage:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1739951681/Avatar_e86jhe.png",
+    restaurant: "Big Burger",
+    price: "$90.00",
+    status: "Pending",
+  },
+  {
+    orderId: "B13788",
+    date: "Feb 11, 2025",
+    customer: "Leslie Alexander",
+    customerImage:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1739951965/Avatar_1_xmb1vf.png",
+    restaurant: "Queenstown Public House",
+    price: "$75.00",
+    status: "Pending",
+  },
+  {
+    orderId: "B13787",
+    date: "Feb 12, 2025",
+    customer: "Ralph Edwards",
+    customerImage:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1739952001/Avatar_2_tvvyp2.png",
+    restaurant: "Top of the Mark",
+    price: "$110.00",
+    status: "Pending",
+  },
+  {
+    orderId: "B13786",
+    date: "Feb 15, 2025",
+    customer: "Jane Cooper",
+    customerImage:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1739952031/Avatar_3_zc8dla.png",
+    restaurant: "Bean Around the World Coffees",
+    price: "$80.00",
+    status: "Pending",
+  },
+  {
+    orderId: "B13785",
+    date: "Feb 21, 2025",
+    customer: "Kathryn Murphy",
+    customerImage:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1739952060/Avatar_4_xpqfuo.png",
+    restaurant: "Top of the Mark",
+    price: "$80.00",
+    status: "Pending",
+  },
+  {
+    orderId: "B13784",
+    date: "Feb 24, 2025",
+    customer: "Jenny Wilson",
+    customerImage:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1739952105/Avatar_5_zdyvu5.png",
+    restaurant: "Mirazur",
+    price: "$30.00",
+    status: "Pending",
+  },
+];

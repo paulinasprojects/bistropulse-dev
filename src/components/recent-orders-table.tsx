@@ -1,3 +1,7 @@
+import Image from 'next/image';
+import { EllipsisVertical } from 'lucide-react';
+import { recentOrdersRequestsData } from '@/lib/data';
+
 import {
   Table,
   TableHeader,
@@ -6,7 +10,6 @@ import {
   TableBody,
   TableCell,
 } from '@/components/ui/table';
-import { EllipsisVertical } from 'lucide-react';
 
 export const RecentOrdersTable = () => {
   return (
@@ -14,82 +17,38 @@ export const RecentOrdersTable = () => {
       <Table>
         <TableHeader>
           <TableRow>
-            <TableHead>Order ID</TableHead>
-            <TableHead>Date</TableHead>
-            <TableHead>Customer</TableHead>
-            <TableHead>Restaurant</TableHead>
-            <TableHead>Price</TableHead>
-            <TableHead>Status</TableHead>
-            <TableHead>Action</TableHead>
+            <TableHead className='text-[16px] text-[#33383F] font-medium md:hidden max-sm:hidden'>Order ID</TableHead>
+            <TableHead className='text-[16px] text-[#33383F] font-medium'>Date</TableHead>
+            <TableHead className='text-[16px] text-[#33383F] font-medium'>Customer</TableHead>
+            <TableHead className='text-[16px] text-[#33383F] font-medium'>Restaurant</TableHead>
+            <TableHead className='text-[16px] text-[#33383F] font-medium'>Price</TableHead>
+            <TableHead className='text-[16px] text-[#33383F] font-medium'>Status</TableHead>
+            <TableHead className='text-[16px] text-[#33383F] font-medium'>Action</TableHead>
           </TableRow>
         </TableHeader>
         <TableBody>
-          <TableRow>
-            <TableCell>B13789</TableCell>
-            <TableCell>Feb 08, 2022</TableCell>
-            <TableCell>Dianne Russell</TableCell>
-            <TableCell>Big Burger</TableCell>
-            <TableCell>$90.00</TableCell>
-            <TableCell>Pending</TableCell>
+          {recentOrdersRequestsData.map((data) => (
+          <TableRow key={data.orderId}>
+            <TableCell className='text-[#6F767E] text-sm font-normal  md:hidden max-sm:hidden'>{data.orderId}</TableCell>
+            <TableCell className='text-[#6F767E] text-sm font-normal'>{data.date}</TableCell>
+            <TableCell className='text-[#6F767E] text-sm font-normal flex items-center gap-2'>
+              <Image
+                src={data.customerImage}
+                alt='image'
+                width={24}
+                height={24}
+                className='rounded-full md:hidden max-sm:hidden'
+              />
+             {data.customer}
+            </TableCell>
+            <TableCell className='text-[#6F767E] text-sm font-normal'>{data.restaurant}</TableCell>
+            <TableCell className='text-[#6F767E] font-normal text-xs'>{data.price}</TableCell>
+            <TableCell className='text-sm text-[#F69133] font-medium'>{data.status}</TableCell>
             <TableCell>
               <EllipsisVertical className='cursor-pointer'/>
             </TableCell>
           </TableRow>
-          <TableRow>
-            <TableCell>B13789</TableCell>
-            <TableCell>Feb 08, 2022</TableCell>
-            <TableCell>Dianne Russell</TableCell>
-            <TableCell>Big Burger</TableCell>
-            <TableCell>$90.00</TableCell>
-            <TableCell>Pending</TableCell>
-            <TableCell>
-              <EllipsisVertical className='cursor-pointer'/>
-            </TableCell>
-          </TableRow>
-          <TableRow>
-            <TableCell>B13789</TableCell>
-            <TableCell>Feb 08, 2022</TableCell>
-            <TableCell>Dianne Russell</TableCell>
-            <TableCell>Big Burger</TableCell>
-            <TableCell>$90.00</TableCell>
-            <TableCell>Pending</TableCell>
-            <TableCell>
-              <EllipsisVertical className='cursor-pointer'/>
-            </TableCell>
-          </TableRow>
-          <TableRow>
-            <TableCell>B13789</TableCell>
-            <TableCell>Feb 08, 2022</TableCell>
-            <TableCell>Dianne Russell</TableCell>
-            <TableCell>Big Burger</TableCell>
-            <TableCell>$90.00</TableCell>
-            <TableCell>Pending</TableCell>
-            <TableCell>
-              <EllipsisVertical className='cursor-pointer'/>
-            </TableCell>
-          </TableRow>
-          <TableRow>
-            <TableCell>B13789</TableCell>
-            <TableCell>Feb 08, 2022</TableCell>
-            <TableCell>Dianne Russell</TableCell>
-            <TableCell>Big Burger</TableCell>
-            <TableCell>$90.00</TableCell>
-            <TableCell>Pending</TableCell>
-            <TableCell>
-              <EllipsisVertical className='cursor-pointer'/>
-            </TableCell>
-          </TableRow>
-          <TableRow>
-            <TableCell>B13789</TableCell>
-            <TableCell>Feb 08, 2022</TableCell>
-            <TableCell>Dianne Russell</TableCell>
-            <TableCell>Big Burger</TableCell>
-            <TableCell>$90.00</TableCell>
-            <TableCell>Pending</TableCell>
-            <TableCell>
-              <EllipsisVertical className='cursor-pointer'/>
-            </TableCell>
-          </TableRow>
+          ))}
         </TableBody>
       </Table>
     </div>
