@@ -9,7 +9,7 @@ export const HomeView = () => {
       <div className="flex flex-col gap-4">
         <OrderCard/>
         <RecentOrdersRequests/>
-        <div className="lg:flex xl:flex-row gap-4 md:flex-col max-sm:flex-col">
+        <div className="lg:flex xl:flex-row gap-4 md:flex md:flex-col max-sm:flex max-sm:flex-col">
           <TotalRevenueCard/>
           <SalesCard/>
         </div>

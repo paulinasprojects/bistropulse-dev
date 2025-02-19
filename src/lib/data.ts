@@ -144,3 +144,24 @@ export const recentOrdersRequestsData = [
     status: "Pending",
   },
 ];
+
+export const salesData = [
+  {
+    title: "Total Sales",
+    count: "1,390",
+    percent: "2.35%",
+    className: "bg-[#fef0e2] text-[#F69133]",
+  },
+  {
+    title: "Hourly Sales",
+    count: "139",
+    percent: "2.35%",
+    className: "bg-[#e1f0f4] text-[#2796AE]",
+  },
+  {
+    title: "Monthly Sales",
+    count: "1123",
+    percent: "2.35%",
+    className: "bg-[#e1f4e9] text-[#27AE60]",
+  },
+];
