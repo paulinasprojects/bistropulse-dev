@@ -1,5 +1,7 @@
 import { OrderCard } from "../order-card"
 import { RecentOrdersRequests } from "../recent-orders-requests"
+import { SalesCard } from "../sales-card"
+import { TotalRevenueCard } from "../total-revenue-card"
 
 export const HomeView = () => {
   return (
@@ -7,6 +9,10 @@ export const HomeView = () => {
       <div className="flex flex-col gap-4">
         <OrderCard/>
         <RecentOrdersRequests/>
+        <div className="lg:flex xl:flex-row gap-4 md:flex-col max-sm:flex-col">
+          <TotalRevenueCard/>
+          <SalesCard/>
+        </div>
       </div>
     </div>
   )

@@ -37,7 +37,7 @@ export const RecentOrdersTable = () => {
                 alt='image'
                 width={24}
                 height={24}
-                className='rounded-full md:hidden max-sm:hidden'
+                className='rounded-full lg:block md:hidden max-sm:hidden'
               />
              {data.customer}
             </TableCell>
