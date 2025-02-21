@@ -6,7 +6,7 @@ export const OrderCard = () => {
   return (
     <div className="xl:flex gap-4 lg:grid lg:grid-cols-2 md:grid md:grid-cols-2 max-sm:flex max-sm:flex-col">
       {homepageOrders.map((data) => (
-        <Card key={data.id} className="shadow-sm">
+        <Card key={data.id} className="shadow-sm w-full">
           <CardContent>
             <div className="flex items-center gap-4 mt-[16px]">
               <div className={cn(data.className, `flex items-center justify-center rounded-[11px] xl:w-[75px] xl:h-[75px] md:w-[50px] md:h-[50px] shadow-md`)}>

@@ -6,7 +6,7 @@ import { RecentOrdersTable } from './recent-orders-table';
 export const RecentOrdersRequests = () => {
   return (
     <div>
-     <Card className='max-w-[1090px]'>
+     <Card className='w-full'>
       <CardContent className='mt-[27px]'>
        <div className="flex items-center justify-between">
           <CardHeading

@@ -1,5 +1,7 @@
 import { OrderCard } from "../order-card"
+import { RankedRestaurantCard } from "../ranked-restaurant-card"
 import { RecentOrdersRequests } from "../recent-orders-requests"
+import { RestaurantCard } from "../restaurant-card"
 import { SalesCard } from "../sales-card"
 import { TotalRevenueCard } from "../total-revenue-card"
 
@@ -12,6 +14,10 @@ export const HomeView = () => {
         <div className="lg:flex xl:flex-row gap-4 md:flex md:flex-col max-sm:flex max-sm:flex-col">
           <TotalRevenueCard/>
           <SalesCard/>
+        </div>
+        <div className="lg:flex xl:flex-row gap-4 md:flex md:flex-col max-sm:flex max-sm:flex-col">
+          <RestaurantCard/>
+          <RankedRestaurantCard/>
         </div>
       </div>
     </div>

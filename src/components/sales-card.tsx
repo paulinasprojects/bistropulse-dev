@@ -8,7 +8,7 @@ import {
 
 export const SalesCard = () => {
   return (
-    <Card className='xl:max-w-[430px] lg:w-full'>
+    <Card className='xl:max-w-[500px] lg:w-full'>
       <CardContent className='mt-[28px]'>
         <div className="flex justify-between">
           <CardHeading
