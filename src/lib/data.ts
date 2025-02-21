@@ -360,3 +360,30 @@ export const ReviewsData = [
     rating: 4.8,
   },
 ];
+
+export const CustomersData = [
+  {
+    id: uuidv4(),
+    name: "Chelsea Johnson",
+    phone: "880160000770",
+    location: "Corner Street 5th London",
+  },
+  {
+    id: uuidv4(),
+    name: "Matthew Duke",
+    phone: "880160043540",
+    location: "Corner Street 5th London",
+  },
+  {
+    id: uuidv4(),
+    name: "Rod Elder",
+    phone: "680161234770",
+    location: "Corner Street 5th London",
+  },
+  {
+    id: uuidv4(),
+    name: "Earl Moss",
+    phone: "880164568770",
+    location: "Corner Street 5th London",
+  },
+];

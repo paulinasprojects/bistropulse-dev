@@ -1,10 +1,10 @@
 "use client";
 
+import { DataTableProps } from '../reviews-table/data-table';
+
 import {
-  ColumnDef,
   flexRender,
   getCoreRowModel,
-  getPaginationRowModel,
   useReactTable
 } from '@tanstack/react-table';
 
@@ -16,41 +16,33 @@ import {
   TableHeader,
   TableRow
 } from '@/components/ui/table';
-import { Button } from '@/components/ui/button';
-
-export interface DataTableProps<TData, TValue> {
-  columns: ColumnDef<TData, TValue>[];
-  data: TData[];
-};
 
 
 export function DataTable<TData, TValue>({
-  columns,
+  columns, 
   data
 }: DataTableProps<TData, TValue>) {
   const table = useReactTable({
     data,
     columns,
     getCoreRowModel: getCoreRowModel(),
-    getPaginationRowModel: getPaginationRowModel(),
   });
 
   return (
-    <>
-    <div className='mt-7'>
+    <div className="mt-7">
       <Table>
         <TableHeader>
           {table.getHeaderGroups().map((group) => (
             <TableRow key={group.id}>
-                  {group.headers.map((header) => {
+              {group.headers.map((header) => {
                 return (
                   <TableHead key={header.id} className='font-medium text-[16px] text-[#33383F]'>
-                    {header.isPlaceholder
-                      ? null
+                    {header.isPlaceholder 
+                      ? null 
                       : flexRender(
-                          header.column.columnDef.header,
-                          header.getContext()
-                        )}
+                      header.column.columnDef.header,
+                      header.getContext()
+                    )}
                   </TableHead>
                 )
               })}
@@ -73,32 +65,13 @@ export function DataTable<TData, TValue>({
             ))
           ) : (
             <TableRow>
-              <TableCell colSpan={columns.length} className="h-24 text-center">
-                No results.
+              <TableCell colSpan={columns.length} className='h-24 text-center'>
+                No results
               </TableCell>
             </TableRow>
           )}
         </TableBody>
       </Table>
     </div>
-      <div className="flex items-center justify-end space-x-2 py-4">
-        <Button
-          variant="outline"
-          size="sm"
-          onClick={() => table.previousPage()}
-          disabled={!table.getCanPreviousPage()}
-        >
-          Previous
-        </Button>
-        <Button
-          variant="outline"
-          size="sm"
-          onClick={() => table.nextPage()}
-          disabled={!table.getCanNextPage()}
-        >
-          Next
-        </Button>
-      </div>
-    </>
   )
 }
