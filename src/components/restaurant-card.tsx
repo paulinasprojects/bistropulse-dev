@@ -7,7 +7,7 @@ import { RestaurantTabs } from './restaurant-tabs';
 
 export const RestaurantCard = () => {
   return (
-    <Card className='w-full'>
+    <Card className='xl:max-w-[648px] lg:w-full'>
       <CardContent className='mt-[28px]'>
         <CardHeading
           title='Restaurants'

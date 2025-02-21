@@ -72,9 +72,117 @@ export const RestaurantTabs = () => {
           </div>
         </div>
       </TabsContent>
-      <TabsContent value="yesterday" className="mt-[51px]">Change your password here.</TabsContent>
-      <TabsContent value="last-week" className="mt-[51px]">Last week.</TabsContent>
-      <TabsContent value="last-month" className="mt-[51px]">Last month.</TabsContent>
+      <TabsContent value="yesterday" className="mt-[51px]">
+        <div className="flex flex-col gap-5">
+          <div className="bg-[#EFEFEF] rounded-[6px] p-4 w-full">
+            <div className="flex justify-between">
+              <div className="flex gap-[26px]">
+                <div className="bg-[#d1dff1] w-[125px] h-[127px] flex items-center justify-center rounded-[11px]">
+                  <Image
+                    src="/medium-logo.svg"
+                    alt="logo"
+                    width={56}
+                    height={56}
+                  />
+                </div>
+                <div className="flex flex-col gap-1">
+                  <p className="text-[#818C99] font-normal text-[16px] leading-[20px]">Pending Restaurants</p>
+                  <p className="font-bold text-2xl leading-[38px] text-[#111315]">1200</p>
+                </div>
+              </div>
+                <EllipsisVertical className="cursor-pointer"/>
+            </div>
+          </div>
+          <div className="flex gap-4">
+            <div className="bg-[#EFEFEF] w-full rounded-[6px] p-4">
+              <div className="flex flex-col gap-2">
+                <p className="text-[#818C99] font-normal text-[16px] leading-[20px]">Open Restaurants</p>
+                <p className="font-bold text-2xl leading-[38px] text-[#111315]">2000</p>
+              </div>
+            </div>
+            <div className="bg-[#EFEFEF] w-full rounded-[6px] p-4">
+              <div className="flex flex-col gap-2">
+              <p className="text-[#818C99] font-normal text-[16px] leading-[20px]">Closed Restaurants</p>
+              <p className="font-bold text-2xl leading-[38px] text-[#111315]">50</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </TabsContent>
+      <TabsContent value="last-week" className="mt-[51px]">
+      <div className="flex flex-col gap-5">
+          <div className="bg-[#EFEFEF] rounded-[6px] p-4 w-full">
+            <div className="flex justify-between">
+              <div className="flex gap-[26px]">
+                <div className="bg-[#d1dff1] w-[125px] h-[127px] flex items-center justify-center rounded-[11px]">
+                  <Image
+                    src="/medium-logo.svg"
+                    alt="logo"
+                    width={56}
+                    height={56}
+                  />
+                </div>
+                <div className="flex flex-col gap-1">
+                  <p className="text-[#818C99] font-normal text-[16px] leading-[20px]">Pending Restaurants</p>
+                  <p className="font-bold text-2xl leading-[38px] text-[#111315]">740</p>
+                </div>
+              </div>
+                <EllipsisVertical className="cursor-pointer"/>
+            </div>
+          </div>
+          <div className="flex gap-4">
+            <div className="bg-[#EFEFEF] w-full rounded-[6px] p-4">
+              <div className="flex flex-col gap-2">
+                <p className="text-[#818C99] font-normal text-[16px] leading-[20px]">Open Restaurants</p>
+                <p className="font-bold text-2xl leading-[38px] text-[#111315]">1300</p>
+              </div>
+            </div>
+            <div className="bg-[#EFEFEF] w-full rounded-[6px] p-4">
+              <div className="flex flex-col gap-2">
+              <p className="text-[#818C99] font-normal text-[16px] leading-[20px]">Closed Restaurants</p>
+              <p className="font-bold text-2xl leading-[38px] text-[#111315]">110</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </TabsContent>
+      <TabsContent value="last-month" className="mt-[51px]">
+      <div className="flex flex-col gap-5">
+          <div className="bg-[#EFEFEF] rounded-[6px] p-4 w-full">
+            <div className="flex justify-between">
+              <div className="flex gap-[26px]">
+                <div className="bg-[#d1dff1] w-[125px] h-[127px] flex items-center justify-center rounded-[11px]">
+                  <Image
+                    src="/medium-logo.svg"
+                    alt="logo"
+                    width={56}
+                    height={56}
+                  />
+                </div>
+                <div className="flex flex-col gap-1">
+                  <p className="text-[#818C99] font-normal text-[16px] leading-[20px]">Pending Restaurants</p>
+                  <p className="font-bold text-2xl leading-[38px] text-[#111315]">650</p>
+                </div>
+              </div>
+                <EllipsisVertical className="cursor-pointer"/>
+            </div>
+          </div>
+          <div className="flex gap-4">
+            <div className="bg-[#EFEFEF] w-full rounded-[6px] p-4">
+              <div className="flex flex-col gap-2">
+                <p className="text-[#818C99] font-normal text-[16px] leading-[20px]">Open Restaurants</p>
+                <p className="font-bold text-2xl leading-[38px] text-[#111315]">1250</p>
+              </div>
+            </div>
+            <div className="bg-[#EFEFEF] w-full rounded-[6px] p-4">
+              <div className="flex flex-col gap-2">
+              <p className="text-[#818C99] font-normal text-[16px] leading-[20px]">Closed Restaurants</p>
+              <p className="font-bold text-2xl leading-[38px] text-[#111315]">500</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </TabsContent>
     </Tabs>
 
   )

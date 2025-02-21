@@ -165,3 +165,34 @@ export const salesData = [
     className: "bg-[#e1f4e9] text-[#27AE60]",
   },
 ];
+
+export const rankedRestaurantsData = [
+  {
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1740128531/unsplash_oBbTc1VoT-0_iy4g5d.png",
+    restaurantName: "Star Valley Restaurant",
+    restaurantAdress: "G. P. O., Asafoatse Nettey Road, Accra",
+    restaurantOrders: 29,
+  },
+  {
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1740128531/unsplash_oBbTc1VoT-0_iy4g5d.png",
+    restaurantName: "Queenstown Public House",
+    restaurantAdress: "G. P. O., Asafoatse Nettey Road, Accra",
+    restaurantOrders: 59,
+  },
+  {
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1740128531/unsplash_oBbTc1VoT-0_iy4g5d.png",
+    restaurantName: "Top of the Mark",
+    restaurantAdress: "G. P. O., Asafoatse Nettey Road, Accra",
+    restaurantOrders: 41,
+  },
+  {
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1740128531/unsplash_oBbTc1VoT-0_iy4g5d.png",
+    restaurantName: "Mirazur",
+    restaurantAdress: "G. P. O., Asafoatse Nettey Road, Accra",
+    restaurantOrders: 75,
+  },
+];
