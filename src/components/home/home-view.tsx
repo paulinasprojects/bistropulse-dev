@@ -5,7 +5,9 @@ import { RecentOrdersRequests } from "../recent-orders-requests"
 import { RestaurantCard } from "../restaurant-card"
 import { ReviewCard } from "../reviews-card"
 import { RewardsPointsCard } from "../rewards-points-card"
+import { RidersCard } from "../riders-card"
 import { SalesCard } from "../sales-card"
+import { ShiftStatisticsCard } from "../shift-statistics-card"
 import { TotalRevenueCard } from "../total-revenue-card"
 
 export const HomeView = () => {
@@ -28,6 +30,10 @@ export const HomeView = () => {
         <div className="lg:flex xl:flex-row gap-4 md:flex md:flex-col max-sm:flex max-sm:flex-col">
           <CustomersCard/>
           <RewardsPointsCard/>
+        </div>
+        <div className="lg:flex xl:flex-row gap-4 md:flex md:flex-col max-sm:flex max-sm:flex-col">
+          <ShiftStatisticsCard/>
+          <RidersCard/>
         </div>
       </div>
     </div>

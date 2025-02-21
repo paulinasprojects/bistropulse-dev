@@ -17,32 +17,32 @@ import { TotalRevenueDropdownMenu } from './total-revenue-dropdown-menu';
 
 const chartData = [
   {
-    month: "10:00AM",
+   time: "10:00AM",
     desktop: 11,
     mobile: 20,
   },
   {
-    month: "11:00AM",
+   time: "11:00AM",
     desktop: 20,
     mobile: 25,
   },
   {
-    month: "12:00AM",
+   time: "12:00AM",
     desktop: 15,
     mobile: 19,
   },
   {
-    month: "1:00PM",
+   time: "1:00PM",
     desktop: 18,
     mobile: 35,
   },
   {
-    month: "2:00PM",
+   time: "2:00PM",
     desktop: 35,
     mobile: 25,
   },
   {
-    month: "3:00PM",
+   time: "3:00PM",
     desktop: 18,
     mobile: 45,
   },
@@ -109,7 +109,7 @@ export function TotalRevenueCard() {
           >
             <CartesianGrid vertical={false}/>
             <XAxis
-              dataKey="month"
+              dataKey="time"
               tickLine={false}
               axisLine={false}
               tickMargin={5}
