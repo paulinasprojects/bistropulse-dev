@@ -361,6 +361,63 @@ export const ReviewsData = [
   },
 ];
 
+export const RestaurantsData = [
+  {
+    id: uuidv4(),
+    name: "Sun valley restaurant",
+    representative: "Darrell Steward",
+    location: "Aueduase",
+    phone: "(406) 555-0120",
+    rating: 4.8,
+    status: "Open",
+  },
+  {
+    id: uuidv4(),
+    name: "Moon valley restaurant",
+    representative: "Darrell Steward",
+    location: "Asafoatse Nettey Road, Accra",
+    phone: "(480) 555-0103",
+    rating: 5.0,
+    status: "Closed",
+  },
+  {
+    id: uuidv4(),
+    name: "Queenstown Public House",
+    representative: "Darrell Steward",
+    location: "Aueduase",
+    phone: "(603) 555-0123",
+    rating: 4.5,
+    status: "Open",
+  },
+  {
+    id: uuidv4(),
+    name: "Top of the Mark",
+    representative: "Darrell Steward",
+    location: "Nettey Road, Accra",
+    phone: "(704) 555-0127",
+    rating: 4.9,
+    status: "Closed",
+  },
+  {
+    id: uuidv4(),
+    name: "Mirazur",
+    representative: "Darrell Steward",
+    location: "Asafoatse",
+    phone: "(239) 555-0108",
+    rating: 4.2,
+    status: "Open",
+  },
+  {
+    id: uuidv4(),
+    name: "Red Canappe",
+    representative: "Darrell Steward",
+    location: "Nettey Road, Accra",
+    phone: "(316) 555-0116",
+    rating: 4.8,
+    status: "Closed",
+  },
+];
+
 export const CustomersData = [
   {
     id: uuidv4(),
