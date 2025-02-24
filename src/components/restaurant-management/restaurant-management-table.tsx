@@ -1,4 +1,7 @@
-import { SearchIcon, Filter, FileUp} from "lucide-react";
+"use client";
+
+import { useState } from "react";
+import { SearchIcon, Filter, FileUp, X} from "lucide-react";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { RestaurantsData } from "@/lib/data";
 import { columns } from "./columns";
@@ -6,9 +9,17 @@ import { columns } from "./columns";
 import { CardHeading } from "../card-heading";
 import { Card, CardContent } from "@/components/ui/card";
 import { RestaurantTable } from "./restaurant-table";
+import { FilterModalContent } from "./filter-modal-content";
 
 export const RestaurantManagementTable = () => {
+  const [filterModalOpen, setFilterModalOpen] = useState<boolean>(false);
+
+  const OpenFilterModal = () => {
+    setFilterModalOpen(!filterModalOpen)
+  };
+
   return (
+    <>
     <Card className="w-full py-[31px]">
       <CardContent>
       <div className="flex items-center lg:flex-row max-sm:flex-col md:flex-col max-sm:gap-4 md:gap-4">
@@ -20,8 +31,12 @@ export const RestaurantManagementTable = () => {
             <input type="text" placeholder="Search" className="w-[104px] h-[40px] pl-8 border-[1px] border-[#F4F4F4] rounded-[4px]" />
             <SearchIcon className="absolute top-2 left-1 size-6 text-[#6F767E]"/>
           </div>
-          <button className="flex items-center justify-center gap-2 border-[1px] border-[#F4F4F4] rounded-[4px] w-[87px] h-[40px] px-2">
-            <Filter className="size-6"/>
+          <button className="flex items-center justify-center gap-2 border-[1px] border-[#F4F4F4] rounded-[4px] w-[87px] h-[40px] px-2 text-[15px] font-normal text-[#9A9FA5]" onClick={() => OpenFilterModal()}>
+            {filterModalOpen ? (
+              <X className="size-6 text-[#6F767E]"/>
+            ) : (
+              <Filter className="size-6 text-[#6F767E]"/>
+            )}
             Filter
           </button>
           <button className="w-[134px] h-[40px] text-[15px] font-medium  bg-[#2A85FF] hover:bg-[#4291f8] text-white rounded-[4px] max-sm:text-[12px]">Add Restaurant</button>
@@ -32,8 +47,15 @@ export const RestaurantManagementTable = () => {
           </button>
         </div>
       </div>
+      {filterModalOpen && (
+          <div className="test-classname">
+            <FilterModalContent/>
+          </div>
+        )}
       <RestaurantTable columns={columns} data={RestaurantsData}/>
       </CardContent>
     </Card>
+   
+    </>
   )
 }
