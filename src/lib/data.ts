@@ -11,6 +11,11 @@ import {
   PackageX,
   PackageCheck,
   PackagePlus,
+  Plus,
+  Columns2,
+  ListIcon,
+  HistoryIcon,
+  SquarePlus,
 } from "lucide-react";
 
 export const sidebarItems = [
@@ -25,19 +30,60 @@ export const sidebarItems = [
     icon: UsersIcon,
   },
   {
-    title: "Restaurant Management",
+    title: "Rest. Management",
     href: "/restaurant-management",
     icon: StoreIcon,
+    subcategories: [
+      {
+        title: "Add Restaurant",
+        href: "/restaurant-management/add-new-restaurant",
+        icon: Plus,
+      },
+      {
+        title: "Restaurant Overview",
+        href: "/restaurant-management/restaurant/overview",
+        icon: Columns2,
+      },
+    ],
   },
   {
     title: "Rider Management",
     href: "/rider-management",
     icon: BikeIcon,
+    subcategories: [
+      {
+        title: "Rider List",
+        href: "/rider-management/rider-list",
+        icon: ListIcon,
+      },
+      {
+        title: "Rider Attendance",
+        href: "/rider-management/rider-attendace",
+        icon: HistoryIcon,
+      },
+    ],
   },
   {
     title: "Orders Management",
     href: "/orders-management",
     icon: Book,
+    subcategories: [
+      {
+        title: "Order List",
+        href: "/orders-management/restaurant/order-list",
+        icon: ListIcon,
+      },
+      {
+        title: "Order History",
+        href: "/orders-management/restaurant/order-list",
+        icon: HistoryIcon,
+      },
+      {
+        title: "Order Extras",
+        href: "/orders-management/restaurant/order-extras",
+        icon: SquarePlus,
+      },
+    ],
   },
   {
     title: "Advertisement",
