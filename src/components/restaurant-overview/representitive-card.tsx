@@ -1,7 +1,7 @@
 import Image from "next/image"
 import { CardHeading } from "../card-heading"
 import { Card, CardContent } from "@/components/ui/card"
-import { Separator } from "../ui/separator"
+import { Separator } from "@/components/ui/separator"
 
 export const RepresentitiveCard = () => {
   return (
