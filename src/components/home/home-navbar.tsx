@@ -8,7 +8,7 @@ export const HomeNavbar = () => {
         {/* Menu and logo */}
         <div className="flex w-full items-center justify-between">
           <div className="flex items-center gap-4">       
-            <SidebarTrigger/>
+            <SidebarTrigger className="hidden max-sm:block"/>
             <Link href="/">
               <Image
                 src="/bistro-logo.svg"
@@ -18,9 +18,7 @@ export const HomeNavbar = () => {
               />
             </Link>
           </div>
-          <div className="">
             <UserProfile/>
-          </div>
         </div>
     </nav>
   )
