@@ -5,11 +5,11 @@ export const UserProfile = () => {
   return (
     <div className="flex items-center gap-[30px]">
       <div className="relative">
-      <MessageSquareText/>
+      <MessageSquareText className="cursor-pointer"/>
       <span className="absolute w-[8px] h-[8px] rounded-full bg-[#FF6A55] top-0 right-0"/>
       </div>
       <div className="relative">
-        <Bell/>
+        <Bell className="cursor-pointer"/>
         <span className="absolute w-[8px] h-[8px] rounded-full bg-[#FF6A55] top-0 right-0.5"/>
       </div>
       <Image
