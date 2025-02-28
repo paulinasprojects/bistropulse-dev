@@ -102,7 +102,7 @@ export const restaurantSidebarItems = [
   },
   {
     title: "Customer List",
-    href: "/restaurant-management/restaurant/1/customer-list",
+    href: "/restaurant-management/restaurant/7d8d5912-feb8-48a0-9431-b6dc3d6ba81c/customer-list",
     icon: ListIcon,
   },
   {
@@ -562,5 +562,98 @@ export const CustomersData = [
     name: "Earl Moss",
     phone: "880164568770",
     location: "Corner Street 5th London",
+  },
+];
+
+export const CustomersListData = [
+  {
+    id: uuidv4(),
+    name: "Chelsie Jhonson",
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1740573382/c08cf661-a119-4c04-a0ae-798917e9f7f1_akrliv.png",
+    phone: "880160000770",
+    email: "chelsie@ui8.net",
+    location: "Corner Street 5th London..",
+    created: "2 Feb 2022",
+  },
+  {
+    id: uuidv4(),
+    name: "Chelsie Jhonson",
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1740573382/c08cf661-a119-4c04-a0ae-798917e9f7f1_akrliv.png",
+    phone: "880160000770",
+    email: "chelsie@ui8.net",
+    location: "Corner Street 5th London..",
+    created: "2 Feb 2022",
+  },
+  {
+    id: uuidv4(),
+    name: "Chelsie Jhonson",
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1740573382/c08cf661-a119-4c04-a0ae-798917e9f7f1_akrliv.png",
+    phone: "880160000770",
+    email: "chelsie@ui8.net",
+    location: "Corner Street 5th London..",
+    created: "2 Feb 2022",
+  },
+  {
+    id: uuidv4(),
+    name: "Chelsie Jhonson",
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1740573382/c08cf661-a119-4c04-a0ae-798917e9f7f1_akrliv.png",
+    phone: "880160000770",
+    email: "chelsie@ui8.net",
+    location: "Corner Street 5th London..",
+    created: "2 Feb 2022",
+  },
+  {
+    id: uuidv4(),
+    name: "Chelsie Jhonson",
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1740573382/c08cf661-a119-4c04-a0ae-798917e9f7f1_akrliv.png",
+    phone: "880160000770",
+    email: "chelsie@ui8.net",
+    location: "Corner Street 5th London..",
+    created: "2 Feb 2022",
+  },
+  {
+    id: uuidv4(),
+    name: "Chelsie Jhonson",
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1740573382/c08cf661-a119-4c04-a0ae-798917e9f7f1_akrliv.png",
+    phone: "880160000770",
+    email: "chelsie@ui8.net",
+    location: "Corner Street 5th London..",
+    created: "2 Feb 2022",
+  },
+  {
+    id: uuidv4(),
+    name: "Chelsie Jhonson",
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1740573382/c08cf661-a119-4c04-a0ae-798917e9f7f1_akrliv.png",
+    phone: "880160000770",
+    email: "chelsie@ui8.net",
+    location: "Corner Street 5th London..",
+    created: "2 Feb 2022",
+  },
+  {
+    id: uuidv4(),
+    name: "Chelsie Jhonson",
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1740573382/c08cf661-a119-4c04-a0ae-798917e9f7f1_akrliv.png",
+    phone: "880160000770",
+    email: "chelsie@ui8.net",
+    location: "Corner Street 5th London..",
+    created: "2 Feb 2022",
+  },
+  {
+    id: uuidv4(),
+    name: "Chelsie Jhonson",
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1740573382/c08cf661-a119-4c04-a0ae-798917e9f7f1_akrliv.png",
+    phone: "880160000770",
+    email: "chelsie@ui8.net",
+    location: "Corner Street 5th London..",
+    created: "2 Feb 2022",
   },
 ];

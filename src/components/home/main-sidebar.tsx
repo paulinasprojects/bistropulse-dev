@@ -25,7 +25,7 @@ export const MainSidebar = () => {
         <SidebarMenu className="flex flex-col gap-[12px] mt-5">
           {sidebarItems.map((item) => (
             <div key={item.title}>
-            <SidebarMenuItem key={item.title}>
+            <SidebarMenuItem>
               <SidebarMenuButton
                 tooltip={item.title}
                 asChild
