@@ -12,10 +12,12 @@ import {
   PackageCheck,
   PackagePlus,
   Plus,
-  Columns2,
   ListIcon,
   HistoryIcon,
   SquarePlus,
+  PizzaIcon,
+  CircleDollarSign,
+  Wallet,
 } from "lucide-react";
 
 export const sidebarItems = [
@@ -38,11 +40,6 @@ export const sidebarItems = [
         title: "Add Restaurant",
         href: "/restaurant-management/add-new-restaurant",
         icon: Plus,
-      },
-      {
-        title: "Restaurant Overview",
-        href: "/restaurant-management/restaurant/overview",
-        icon: Columns2,
       },
     ],
   },
@@ -75,7 +72,7 @@ export const sidebarItems = [
       },
       {
         title: "Order History",
-        href: "/orders-management/restaurant/order-list",
+        href: "/orders-management/restaurant/order-history",
         icon: HistoryIcon,
       },
       {
@@ -94,6 +91,83 @@ export const sidebarItems = [
     title: "Employees Management",
     href: "/employees-management",
     icon: UsersIcon,
+  },
+];
+
+export const restaurantSidebarItems = [
+  {
+    title: "Overview",
+    href: "/restaurant-management/restaurant/a4d01916-8a6f-44c0-a75d-7cfd5fe15d19/overview",
+    icon: HomeIcon,
+  },
+  {
+    title: "Customer List",
+    href: "/restaurant-management/restaurant/1/customer-list",
+    icon: ListIcon,
+  },
+  {
+    title: "Food Menu",
+    href: "/restaurant-management/restaurant/7d8d5912-feb8-48a0-9431-b6dc3d6ba81c/food-menu",
+    icon: PizzaIcon,
+    subcategories: [
+      {
+        title: "Food List",
+        href: "/restaurant-management/restaurant/7d8d5912-feb8-48a0-9431-b6dc3d6ba81c/food-menu/food-list",
+        icon: ListIcon,
+      },
+      {
+        title: "Food Categories",
+        href: "/restaurant-management/restaurant/7d8d5912-feb8-48a0-9431-b6dc3d6ba81c/food-menu/food-categories",
+        icon: HistoryIcon,
+      },
+      {
+        title: "Food Extras",
+        href: "/restaurant-management/restaurant/7d8d5912-feb8-48a0-9431-b6dc3d6ba81c/food-menu/food-extras",
+        icon: SquarePlus,
+      },
+    ],
+  },
+  {
+    title: "Orders",
+    href: "/restaurant-management/restaurant/a4d01916-8a6f-44c0-a75d-7cfd5fe15d19/orders",
+    icon: Book,
+    subcategories: [
+      {
+        title: "Order List",
+        href: "/restaurant-management/restaurant/a4d01916-8a6f-44c0-a75d-7cfd5fe15d19/orders/order-list",
+        icon: ListIcon,
+      },
+      {
+        title: "Order History",
+        href: "/restaurant-management/restaurant/a4d01916-8a6f-44c0-a75d-7cfd5fe15d19/orders/order-history",
+        icon: HistoryIcon,
+      },
+      {
+        title: "Order Extras",
+        href: "/restaurant-management/restaurant/a4d01916-8a6f-44c0-a75d-7cfd5fe15d19/orders/order-extras",
+        icon: SquarePlus,
+      },
+    ],
+  },
+  {
+    title: "Sales",
+    href: "/restaurant-management/restaurant/a4d01916-8a6f-44c0-a75d-7cfd5fe15d19/sales",
+    icon: CircleDollarSign,
+  },
+  {
+    title: "Wallet",
+    href: "/restaurant-management/restaurant/a4d01916-8a6f-44c0-a75d-7cfd5fe15d19/wallet",
+    icon: Wallet,
+  },
+  {
+    title: "Reviews & Ratings",
+    href: "/restaurant-management/restaurant/a4d01916-8a6f-44c0-a75d-7cfd5fe15d19/reviews-ratings",
+    icon: ListIcon,
+  },
+  {
+    title: "Advertisement",
+    href: "/restaurant-management/restaurant/a4d01916-8a6f-44c0-a75d-7cfd5fe15d19/advertisment",
+    icon: Megaphone,
   },
 ];
 

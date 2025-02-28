@@ -1,5 +1,6 @@
 'use client';
 
+import { useRouter } from "next/navigation";
 import toast from "react-hot-toast";
 import { CopyIcon, EllipsisVertical, Eye, Pencil, ShieldMinus } from "lucide-react";
 import { Restaurants } from "./columns";
@@ -15,6 +16,8 @@ export const CellAction = ({ data }: Props) => {
     navigator.clipboard.writeText(id);
     toast.success("Restaurant id copied to clipboard")
   };
+
+  const router = useRouter();
 
   return (
     <DropdownMenu>
@@ -32,7 +35,7 @@ export const CellAction = ({ data }: Props) => {
           <CopyIcon className="h-4 w-4"/>
           Copy Id
         </DropdownMenuItem>
-        <DropdownMenuItem className="cursor-pointer">
+        <DropdownMenuItem className="cursor-pointer" onClick={() => router.push(`/restaurant-management/restaurant/${data.id}`,)}>
           <Eye className="h-4 w-4"/>
           View
         </DropdownMenuItem>
