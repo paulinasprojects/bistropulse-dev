@@ -55,7 +55,7 @@ export const CustomerListTable = () => {
               initial={{ opacity: 0, y:20 }}
               animate={{ opacity: 1, y:0 }}
               transition={{ duration: 0.2 }}
-              className="test-classname"
+              className="customer-filter"
             >
               <FilterModalContent/>
             </motion.div>
