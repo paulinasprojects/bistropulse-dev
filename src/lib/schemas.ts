@@ -59,3 +59,22 @@ export const addRestaurantSchema = z.object({
     }),
   location: z.string().min(1, { message: "Location is required" }),
 });
+
+export enum CustomerGender {
+  Male = "Male",
+  Female = "Female",
+}
+
+export const addCustomerSchema = z.object({
+  name: z.string().min(1, { message: "Name is required" }),
+  email: z
+    .string()
+    .min(1, { message: "Email is required" })
+    .email({ message: "Invalid email" }),
+  phone: z.coerce.number().min(1, { message: "Phone number is requred" }),
+  gender: z.nativeEnum(CustomerGender, {
+    message: "Gender is required",
+  }),
+  location: z.string().min(1, { message: "Location is required" }),
+  student: z.boolean().default(false).optional(),
+});
