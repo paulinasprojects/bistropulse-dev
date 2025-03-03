@@ -657,3 +657,83 @@ export const CustomersListData = [
     created: "2 Feb 2022",
   },
 ];
+
+export const CustomerListCustomData = [
+  {
+    id: uuidv4(),
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1740994759/Avatar_6_o5syyt.png",
+    name: "Ronald Richards",
+    phone: "+880160000770",
+  },
+  {
+    id: uuidv4(),
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1740573382/c08cf661-a119-4c04-a0ae-798917e9f7f1_akrliv.png",
+    name: "Chelsie Johnson",
+    phone: "+880160000770",
+  },
+  {
+    id: uuidv4(),
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1740994802/ab3b6024-91b0-446a-a711-84fe190bc858_spyqur.png",
+    name: "Darrell Steward",
+    phone: "+880160000770",
+  },
+  {
+    id: uuidv4(),
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1740994842/1a1b7335-1424-46d7-ba93-a04f68d2cb7e_yt7giw.png",
+    name: "Alberta Flores",
+    phone: "+880160000770",
+  },
+  {
+    id: uuidv4(),
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1740994860/55f239a8-4a3c-4802-bda5-2f60030acb3e_cso3zj.png",
+    name: "Wade Warren",
+    phone: "+880160000770",
+  },
+  {
+    id: uuidv4(),
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1740994892/33ae9e56-2917-4aa1-96c8-64731161b6cc_fl6tog.png",
+    name: "Esther Howard",
+    phone: "+880160000770",
+  },
+  {
+    id: uuidv4(),
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1740994914/52633bcb-e5c7-42eb-9485-2b809be5bf85_bp5oj4.png",
+    name: "Cameron Williamson",
+    phone: "+880160000770",
+  },
+  {
+    id: uuidv4(),
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1740994964/abc86d40-c5ff-4e6b-b5f6-9601377d3bf0_n6ocdm.png",
+    name: "Brooklyn Simmons",
+    phone: "+880160000770",
+  },
+  {
+    id: uuidv4(),
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1740994990/6fe669cc-7fa5-4648-aef8-6662c9b1a4a7_q54avh.png",
+    name: "Jenny Wilson",
+    phone: "+880160000770",
+  },
+  {
+    id: uuidv4(),
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1740995013/a8b3438f-f1b9-48fa-ba1d-29e4cbf32fd3_qqfrcj.png",
+    name: "Dianne Russell",
+    phone: "+880160000770",
+  },
+  {
+    id: uuidv4(),
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1740995030/ec835fbe-f852-42fe-9afe-082d249a369a_jemhpx.png",
+    name: "Devon Lane",
+    phone: "+880160000770",
+  },
+];
