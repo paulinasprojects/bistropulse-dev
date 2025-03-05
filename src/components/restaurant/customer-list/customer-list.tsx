@@ -6,7 +6,7 @@ export const CustomerList = () => {
     <div className="mt-4">
       <div className="flex flex-col gap-4">
         {CustomerListCustomData.map((data) => (
-        <div className="flex gap-2" key={data.id}>
+        <div className="flex gap-2 hover:bg-[#F4F4F4] cursor-pointer p-1.5 hover:rounded-[8px]" key={data.id}>
           <Image
             src={data.image}
             alt="customer image"

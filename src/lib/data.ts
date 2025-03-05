@@ -109,14 +109,9 @@ export const restaurantSidebarItems = [
     icon: PizzaIcon,
     subcategories: [
       {
-        title: "Food List",
-        href: "/restaurant-management/restaurant/1/food-menu/food-list",
-        icon: ListIcon,
-      },
-      {
         title: "Food Categories",
         href: "/restaurant-management/restaurant/1/food-menu/food-categories",
-        icon: HistoryIcon,
+        icon: ListIcon,
       },
       {
         title: "Food Extras",
@@ -772,5 +767,62 @@ export const CustomerOrdersData = [
     details: "Fufu (1), Banku(2), Bel-Aqua(1)...",
     date: "Nov 06, 2024",
     status: "Cancelled",
+  },
+];
+
+export const FoodMenuListData = [
+  {
+    id: 1,
+    name: "Beef onion pizza",
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1741171757/044e3eec-60f8-49bc-9037-5a7efd26547b_cipyko.png",
+    category: "Pizza",
+    price: "$24.00",
+    status: "Active",
+  },
+  {
+    id: 2,
+    name: "Cheese Pizza",
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1741171789/b54bf726-6526-47ca-8549-e22b1c4b666a_xniu5m.png",
+    category: "Pizza",
+    price: "$14.00",
+    status: "Disabled",
+  },
+  {
+    id: 3,
+    name: "Chicken burger",
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1741171818/dfb01624-c24f-4bb7-a5fe-dc7a40b06d3c_uyuu2a.png",
+    category: "Burger",
+    price: "$9.00",
+    status: "Active",
+  },
+  {
+    id: 4,
+    name: "Beef burger",
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1741171839/095a50b9-6f94-4c87-873e-a79c9a263810_vjylr3.png",
+    category: "Burger",
+    price: "$11.00",
+    status: "Disabled",
+  },
+  {
+    id: 5,
+    name: "Beef special pizza",
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1741171860/22906323-2e80-4892-87e7-feb9e10c18a6_klq4pu.png",
+    category: "Pizza",
+    price: "$6.00",
+    status: "Active",
+  },
+  {
+    id: 5,
+    name: "Cheese Pizza",
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1741171789/b54bf726-6526-47ca-8549-e22b1c4b666a_xniu5m.png",
+    category: "Pizza",
+    price: "$28.00",
+    status: "Disabled",
   },
 ];

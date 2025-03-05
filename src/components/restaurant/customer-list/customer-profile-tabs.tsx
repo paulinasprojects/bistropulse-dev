@@ -28,12 +28,12 @@ const tabsData = [
 export const CustomerProfileTabs = () => {
   return (
     <Tabs defaultValue="overview" className="w-full">
-      <TabsList className="bg-white xl:flex md:grid max-sm:grid md:grid-cols-3 max-sm:grid-cols-1 gap-2 justify-normal">
+      <TabsList className="bg-white xl:flex md:grid max-sm:grid md:grid-cols-3 max-sm:grid-cols-1 justify-normal">
         {tabsData.map((data) => (
           <TabsTrigger
             key={data.value}
             value={data.value}
-            className="data-[state=active]:text-[#2A85FF] data-[state=active]:border-b-[1.5px] data-[state=active]:border-[#2A85FF] data-[state=active]:shadow-none rounded-none bg-white"
+            className="data-[state=active]:text-[#2A85FF] data-[state=active]:border-b-[1.5px] data-[state=active]:border-[#2A85FF] data-[state=active]:shadow-none rounded-none bg-white text-[15px] text-[#6F767E]"
           >
             {data.title}
           </TabsTrigger>
