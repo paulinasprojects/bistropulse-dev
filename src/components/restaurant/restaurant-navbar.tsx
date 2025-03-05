@@ -16,7 +16,7 @@ export const RestaurantNavbar = () => {
           <div className="max-sm:hidden md:hidden lg:flex items-center gap-[7px]">
             <Link href="/restaurant-management" className="text-sm font-medium hover:text-[#2A85FF]">Restaurant Management</Link>
             <MdKeyboardArrowRight />
-            <Link href="/restaurant-management/restaurant/7d8d5912-feb8-48a0-9431-b6dc3d6ba81c" className="text-[12px] font-normal text-[#6F767E] hover:text-[#2A85FF]">
+            <Link href="/restaurant-management/restaurant/1" className="text-[12px] font-normal text-[#6F767E] hover:text-[#2A85FF]">
               Restaurant
             </Link>
           </div>

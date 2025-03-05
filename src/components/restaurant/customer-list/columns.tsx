@@ -5,7 +5,7 @@ import { CellAction } from "./cell-action";
 import Image from "next/image";
 
 export type Customers = {
-  id: string;
+  id: number;
   name: string;
   image: string;
   phone: string;

@@ -12,8 +12,8 @@ interface Props {
 }
 
 export const CellAction = ({ data }: Props) => {
-  const onCopy = (id: string) => {
-    navigator.clipboard.writeText(id);
+  const onCopy = (id: number) => {
+    navigator.clipboard.writeText(id.toString());
     toast.success("Restaurant id copied to clipboard")
   };
 

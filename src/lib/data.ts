@@ -1,5 +1,3 @@
-import { v4 as uuidv4 } from "uuid";
-
 import {
   BikeIcon,
   HomeIcon,
@@ -97,104 +95,104 @@ export const sidebarItems = [
 export const restaurantSidebarItems = [
   {
     title: "Overview",
-    href: "/restaurant-management/restaurant/a4d01916-8a6f-44c0-a75d-7cfd5fe15d19/overview",
+    href: "/restaurant-management/restaurant/1/overview",
     icon: HomeIcon,
   },
   {
     title: "Customer List",
-    href: "/restaurant-management/restaurant/7d8d5912-feb8-48a0-9431-b6dc3d6ba81c/customer-list",
+    href: "/restaurant-management/restaurant/1/customer-list",
     icon: ListIcon,
   },
   {
     title: "Food Menu",
-    href: "/restaurant-management/restaurant/7d8d5912-feb8-48a0-9431-b6dc3d6ba81c/food-menu",
+    href: "/restaurant-management/restaurant/1/food-menu",
     icon: PizzaIcon,
     subcategories: [
       {
         title: "Food List",
-        href: "/restaurant-management/restaurant/7d8d5912-feb8-48a0-9431-b6dc3d6ba81c/food-menu/food-list",
+        href: "/restaurant-management/restaurant/1/food-menu/food-list",
         icon: ListIcon,
       },
       {
         title: "Food Categories",
-        href: "/restaurant-management/restaurant/7d8d5912-feb8-48a0-9431-b6dc3d6ba81c/food-menu/food-categories",
+        href: "/restaurant-management/restaurant/1/food-menu/food-categories",
         icon: HistoryIcon,
       },
       {
         title: "Food Extras",
-        href: "/restaurant-management/restaurant/7d8d5912-feb8-48a0-9431-b6dc3d6ba81c/food-menu/food-extras",
+        href: "/restaurant-management/restaurant/1/food-menu/food-extras",
         icon: SquarePlus,
       },
     ],
   },
   {
     title: "Orders",
-    href: "/restaurant-management/restaurant/a4d01916-8a6f-44c0-a75d-7cfd5fe15d19/orders",
+    href: "/restaurant-management/restaurant/1/orders",
     icon: Book,
     subcategories: [
       {
         title: "Order List",
-        href: "/restaurant-management/restaurant/a4d01916-8a6f-44c0-a75d-7cfd5fe15d19/orders/order-list",
+        href: "/restaurant-management/restaurant/1/orders/order-list",
         icon: ListIcon,
       },
       {
         title: "Order History",
-        href: "/restaurant-management/restaurant/a4d01916-8a6f-44c0-a75d-7cfd5fe15d19/orders/order-history",
+        href: "/restaurant-management/restaurant/1/orders/order-history",
         icon: HistoryIcon,
       },
       {
         title: "Order Extras",
-        href: "/restaurant-management/restaurant/a4d01916-8a6f-44c0-a75d-7cfd5fe15d19/orders/order-extras",
+        href: "/restaurant-management/restaurant/1/orders/order-extras",
         icon: SquarePlus,
       },
     ],
   },
   {
     title: "Sales",
-    href: "/restaurant-management/restaurant/a4d01916-8a6f-44c0-a75d-7cfd5fe15d19/sales",
+    href: "/restaurant-management/restaurant/1/sales",
     icon: CircleDollarSign,
   },
   {
     title: "Wallet",
-    href: "/restaurant-management/restaurant/a4d01916-8a6f-44c0-a75d-7cfd5fe15d19/wallet",
+    href: "/restaurant-management/restaurant/1/wallet",
     icon: Wallet,
   },
   {
     title: "Reviews & Ratings",
-    href: "/restaurant-management/restaurant/a4d01916-8a6f-44c0-a75d-7cfd5fe15d19/reviews-ratings",
+    href: "/restaurant-management/restaurant/1/reviews-ratings",
     icon: ListIcon,
   },
   {
     title: "Advertisement",
-    href: "/restaurant-management/restaurant/a4d01916-8a6f-44c0-a75d-7cfd5fe15d19/advertisment",
+    href: "/restaurant-management/restaurant/1/advertisment",
     icon: Megaphone,
   },
 ];
 
 export const homepageOrders = [
   {
-    id: uuidv4(),
+    id: 4,
     title: "Active Orders",
     count: 2390,
     icon: Package,
     className: "bg-[#e1f6eb] text-[#39c272]",
   },
   {
-    id: uuidv4(),
+    id: 99,
     title: "Pending Orders",
     count: 2770,
     icon: PackagePlus,
     className: "bg-[#dfeff3] text-[#2796ae]",
   },
   {
-    id: uuidv4(),
+    id: 185,
     title: "Delivered Orders",
     count: 3870,
     icon: PackageCheck,
     className: "bg-[#feefe0] text-[#f69133]",
   },
   {
-    id: uuidv4(),
+    id: 165,
     title: "Returned Orders",
     count: 550,
     icon: PackageX,
@@ -319,161 +317,161 @@ export const rankedRestaurantsData = [
 
 export const ReviewsData = [
   {
-    id: uuidv4(),
+    id: 56,
     name: "Beef onion pizza",
     date: "Feb 09, 2024",
     review: "I'm very much happy. Food is good.",
     rating: 4.8,
   },
   {
-    id: uuidv4(),
+    id: 50,
     name: "Cheese Pizza",
     date: "Feb 10, 2024",
     review: "I'm very much happy. Food is good.",
     rating: 4.8,
   },
   {
-    id: uuidv4(),
+    id: 45,
     name: "Chicken burger",
     date: "Feb 11, 2024",
     review: "I'm very much happy. Food is good.",
     rating: 4.8,
   },
   {
-    id: uuidv4(),
+    id: 41,
     name: "Seared Salmon Fillet",
     date: "Feb 12, 2024",
     review: "I'm very much happy. Food is good.",
     rating: 4.8,
   },
   {
-    id: uuidv4(),
+    id: 38,
     name: "Rosemary Filet Mignon",
     date: "Feb 13, 2024",
     review: "I'm very much happy. Food is good.",
     rating: 4.8,
   },
   {
-    id: uuidv4(),
+    id: 91,
     name: "Summer Fruit Chocolate Mousse",
     date: "Feb 14, 2024",
     review: "I'm very much happy. Food is good.",
     rating: 4.8,
   },
   {
-    id: uuidv4(),
+    id: 13,
     name: "Chicken Wings",
     date: "Feb 15, 2024",
     review: "I'm very much happy. Food is good.",
     rating: 4.8,
   },
   {
-    id: uuidv4(),
+    id: 14,
     name: "Classic Cheeseburger",
     date: "Feb 16, 2024",
     review: "I'm very much happy. Food is good.",
     rating: 4.8,
   },
   {
-    id: uuidv4(),
+    id: 20,
     name: "Pasta Alfredo ",
     date: "Feb 17, 2024",
     review: "I'm very much happy. Food is good.",
     rating: 4.8,
   },
   {
-    id: uuidv4(),
+    id: 24,
     name: "Veggie Stir-Fry",
     date: "Feb 18, 2024",
     review: "I'm very much happy. Food is good.",
     rating: 4.8,
   },
   {
-    id: uuidv4(),
+    id: 156,
     name: "Garlic Bread",
     date: "Feb 19, 2024",
     review: "I'm very much happy. Food is good.",
     rating: 4.8,
   },
   {
-    id: uuidv4(),
+    id: 187,
     name: "Mozzarella Sticks",
     date: "Feb 20, 2024",
     review: "I'm very much happy. Food is good.",
     rating: 4.8,
   },
   {
-    id: uuidv4(),
+    id: 174,
     name: "Ribeye Steak",
     date: "Feb 21, 2024",
     review: "I'm very much happy. Food is good.",
     rating: 4.8,
   },
   {
-    id: uuidv4(),
+    id: 131,
     name: "Grilled Lamb Chops",
     date: "Feb 22, 2024",
     review: "I'm very much happy. Food is good.",
     rating: 4.8,
   },
   {
-    id: uuidv4(),
+    id: 111,
     name: "Grilled Chicken Plate",
     date: "Feb 23, 2024",
     review: "I'm very much happy. Food is good.",
     rating: 4.8,
   },
   {
-    id: uuidv4(),
+    id: 123,
     name: "Teriyaki Chicken",
     date: "Feb 24, 2024",
     review: "I'm very much happy. Food is good.",
     rating: 4.8,
   },
   {
-    id: uuidv4(),
+    id: 145,
     name: "Lobster Tail",
     date: "Feb 25, 2024",
     review: "I'm very much happy. Food is good.",
     rating: 4.8,
   },
   {
-    id: uuidv4(),
+    id: 167,
     name: "Shrimp Scampi",
     date: "Feb 26, 2024",
     review: "I'm very much happy. Food is good.",
     rating: 4.8,
   },
   {
-    id: uuidv4(),
+    id: 189,
     name: "Fish & Chips",
     date: "Feb 27, 2024",
     review: "I'm very much happy. Food is good.",
     rating: 4.8,
   },
   {
-    id: uuidv4(),
+    id: 191,
     name: "Cajun Shrimp Boil ",
     date: "Feb 28, 2024",
     review: "I'm very much happy. Food is good.",
     rating: 4.8,
   },
   {
-    id: uuidv4(),
+    id: 201,
     name: "Crispy Chicken Sandwich ",
     date: "March 1, 2024",
     review: "I'm very much happy. Food is good.",
     rating: 4.8,
   },
   {
-    id: uuidv4(),
+    id: 222,
     name: "Philly Cheesesteak",
     date: "March 2, 2024",
     review: "I'm very much happy. Food is good.",
     rating: 4.8,
   },
   {
-    id: uuidv4(),
+    id: 211,
     name: "Spaghetti Bolognese",
     date: "March 3, 2024",
     review: "I'm very much happy. Food is good.",
@@ -483,7 +481,7 @@ export const ReviewsData = [
 
 export const RestaurantsData = [
   {
-    id: uuidv4(),
+    id: 1,
     name: "Sun valley restaurant",
     representative: "Darrell Steward",
     location: "Aueduase",
@@ -492,7 +490,7 @@ export const RestaurantsData = [
     status: "Open",
   },
   {
-    id: uuidv4(),
+    id: 2,
     name: "Moon valley restaurant",
     representative: "Darrell Steward",
     location: "Asafoatse Nettey Road, Accra",
@@ -501,7 +499,7 @@ export const RestaurantsData = [
     status: "Closed",
   },
   {
-    id: uuidv4(),
+    id: 3,
     name: "Queenstown Public House",
     representative: "Darrell Steward",
     location: "Aueduase",
@@ -510,7 +508,7 @@ export const RestaurantsData = [
     status: "Open",
   },
   {
-    id: uuidv4(),
+    id: 4,
     name: "Top of the Mark",
     representative: "Darrell Steward",
     location: "Nettey Road, Accra",
@@ -519,7 +517,7 @@ export const RestaurantsData = [
     status: "Closed",
   },
   {
-    id: uuidv4(),
+    id: 5,
     name: "Mirazur",
     representative: "Darrell Steward",
     location: "Asafoatse",
@@ -528,7 +526,7 @@ export const RestaurantsData = [
     status: "Open",
   },
   {
-    id: uuidv4(),
+    id: 6,
     name: "Red Canappe",
     representative: "Darrell Steward",
     location: "Nettey Road, Accra",
@@ -540,25 +538,25 @@ export const RestaurantsData = [
 
 export const CustomersData = [
   {
-    id: uuidv4(),
+    id: 25,
     name: "Chelsea Johnson",
     phone: "880160000770",
     location: "Corner Street 5th London",
   },
   {
-    id: uuidv4(),
+    id: 26,
     name: "Matthew Duke",
     phone: "880160043540",
     location: "Corner Street 5th London",
   },
   {
-    id: uuidv4(),
+    id: 27,
     name: "Rod Elder",
     phone: "680161234770",
     location: "Corner Street 5th London",
   },
   {
-    id: uuidv4(),
+    id: 28,
     name: "Earl Moss",
     phone: "880164568770",
     location: "Corner Street 5th London",
@@ -567,7 +565,7 @@ export const CustomersData = [
 
 export const CustomersListData = [
   {
-    id: uuidv4(),
+    id: 12,
     name: "Chelsie Jhonson",
     image:
       "https://res.cloudinary.com/dymlzmyuo/image/upload/v1740573382/c08cf661-a119-4c04-a0ae-798917e9f7f1_akrliv.png",
@@ -577,7 +575,7 @@ export const CustomersListData = [
     created: "2 Feb 2022",
   },
   {
-    id: uuidv4(),
+    id: 13,
     name: "Chelsie Jhonson",
     image:
       "https://res.cloudinary.com/dymlzmyuo/image/upload/v1740573382/c08cf661-a119-4c04-a0ae-798917e9f7f1_akrliv.png",
@@ -587,7 +585,7 @@ export const CustomersListData = [
     created: "2 Feb 2022",
   },
   {
-    id: uuidv4(),
+    id: 14,
     name: "Chelsie Jhonson",
     image:
       "https://res.cloudinary.com/dymlzmyuo/image/upload/v1740573382/c08cf661-a119-4c04-a0ae-798917e9f7f1_akrliv.png",
@@ -597,7 +595,7 @@ export const CustomersListData = [
     created: "2 Feb 2022",
   },
   {
-    id: uuidv4(),
+    id: 15,
     name: "Chelsie Jhonson",
     image:
       "https://res.cloudinary.com/dymlzmyuo/image/upload/v1740573382/c08cf661-a119-4c04-a0ae-798917e9f7f1_akrliv.png",
@@ -607,7 +605,7 @@ export const CustomersListData = [
     created: "2 Feb 2022",
   },
   {
-    id: uuidv4(),
+    id: 16,
     name: "Chelsie Jhonson",
     image:
       "https://res.cloudinary.com/dymlzmyuo/image/upload/v1740573382/c08cf661-a119-4c04-a0ae-798917e9f7f1_akrliv.png",
@@ -617,7 +615,7 @@ export const CustomersListData = [
     created: "2 Feb 2022",
   },
   {
-    id: uuidv4(),
+    id: 17,
     name: "Chelsie Jhonson",
     image:
       "https://res.cloudinary.com/dymlzmyuo/image/upload/v1740573382/c08cf661-a119-4c04-a0ae-798917e9f7f1_akrliv.png",
@@ -627,7 +625,7 @@ export const CustomersListData = [
     created: "2 Feb 2022",
   },
   {
-    id: uuidv4(),
+    id: 18,
     name: "Chelsie Jhonson",
     image:
       "https://res.cloudinary.com/dymlzmyuo/image/upload/v1740573382/c08cf661-a119-4c04-a0ae-798917e9f7f1_akrliv.png",
@@ -637,7 +635,7 @@ export const CustomersListData = [
     created: "2 Feb 2022",
   },
   {
-    id: uuidv4(),
+    id: 19,
     name: "Chelsie Jhonson",
     image:
       "https://res.cloudinary.com/dymlzmyuo/image/upload/v1740573382/c08cf661-a119-4c04-a0ae-798917e9f7f1_akrliv.png",
@@ -647,7 +645,7 @@ export const CustomersListData = [
     created: "2 Feb 2022",
   },
   {
-    id: uuidv4(),
+    id: 20,
     name: "Chelsie Jhonson",
     image:
       "https://res.cloudinary.com/dymlzmyuo/image/upload/v1740573382/c08cf661-a119-4c04-a0ae-798917e9f7f1_akrliv.png",
@@ -660,80 +658,119 @@ export const CustomersListData = [
 
 export const CustomerListCustomData = [
   {
-    id: uuidv4(),
+    id: 15,
     image:
       "https://res.cloudinary.com/dymlzmyuo/image/upload/v1740994759/Avatar_6_o5syyt.png",
     name: "Ronald Richards",
     phone: "+880160000770",
   },
   {
-    id: uuidv4(),
+    id: 101,
     image:
       "https://res.cloudinary.com/dymlzmyuo/image/upload/v1740573382/c08cf661-a119-4c04-a0ae-798917e9f7f1_akrliv.png",
     name: "Chelsie Johnson",
     phone: "+880160000770",
   },
   {
-    id: uuidv4(),
+    id: 981,
     image:
       "https://res.cloudinary.com/dymlzmyuo/image/upload/v1740994802/ab3b6024-91b0-446a-a711-84fe190bc858_spyqur.png",
     name: "Darrell Steward",
     phone: "+880160000770",
   },
   {
-    id: uuidv4(),
+    id: 761,
     image:
       "https://res.cloudinary.com/dymlzmyuo/image/upload/v1740994842/1a1b7335-1424-46d7-ba93-a04f68d2cb7e_yt7giw.png",
     name: "Alberta Flores",
     phone: "+880160000770",
   },
   {
-    id: uuidv4(),
+    id: 651,
     image:
       "https://res.cloudinary.com/dymlzmyuo/image/upload/v1740994860/55f239a8-4a3c-4802-bda5-2f60030acb3e_cso3zj.png",
     name: "Wade Warren",
     phone: "+880160000770",
   },
   {
-    id: uuidv4(),
+    id: 145,
     image:
       "https://res.cloudinary.com/dymlzmyuo/image/upload/v1740994892/33ae9e56-2917-4aa1-96c8-64731161b6cc_fl6tog.png",
     name: "Esther Howard",
     phone: "+880160000770",
   },
   {
-    id: uuidv4(),
+    id: 109,
     image:
       "https://res.cloudinary.com/dymlzmyuo/image/upload/v1740994914/52633bcb-e5c7-42eb-9485-2b809be5bf85_bp5oj4.png",
     name: "Cameron Williamson",
     phone: "+880160000770",
   },
   {
-    id: uuidv4(),
+    id: 135,
     image:
       "https://res.cloudinary.com/dymlzmyuo/image/upload/v1740994964/abc86d40-c5ff-4e6b-b5f6-9601377d3bf0_n6ocdm.png",
     name: "Brooklyn Simmons",
     phone: "+880160000770",
   },
   {
-    id: uuidv4(),
+    id: 125,
     image:
       "https://res.cloudinary.com/dymlzmyuo/image/upload/v1740994990/6fe669cc-7fa5-4648-aef8-6662c9b1a4a7_q54avh.png",
     name: "Jenny Wilson",
     phone: "+880160000770",
   },
   {
-    id: uuidv4(),
+    id: 110,
     image:
       "https://res.cloudinary.com/dymlzmyuo/image/upload/v1740995013/a8b3438f-f1b9-48fa-ba1d-29e4cbf32fd3_qqfrcj.png",
     name: "Dianne Russell",
     phone: "+880160000770",
   },
   {
-    id: uuidv4(),
+    id: 76,
     image:
       "https://res.cloudinary.com/dymlzmyuo/image/upload/v1740995030/ec835fbe-f852-42fe-9afe-082d249a369a_jemhpx.png",
     name: "Devon Lane",
     phone: "+880160000770",
+  },
+];
+
+export const CustomerOrdersData = [
+  {
+    orderId: "B0013789",
+    details: "Fufu (1), Banku(2), Bel-Aqua(1)...",
+    date: "Nov 01, 2024",
+    status: "Pending",
+  },
+  {
+    orderId: "B0013799",
+    details: "Fufu (1), Banku(2), Bel-Aqua(1)...",
+    date: "Nov 02, 2024",
+    status: "Cancelled",
+  },
+  {
+    orderId: "B0013800",
+    details: "Fufu (1), Banku(2), Bel-Aqua(1)...",
+    date: "Nov 03, 2024",
+    status: "Preparing",
+  },
+  {
+    orderId: "B0013801",
+    details: "Fufu (1), Banku(2), Bel-Aqua(1)...",
+    date: "Nov 04, 2024",
+    status: "Delivered",
+  },
+  {
+    orderId: "B0013802",
+    details: "Fufu (1), Banku(2), Bel-Aqua(1)...",
+    date: "Nov 05, 2024",
+    status: "On the way",
+  },
+  {
+    orderId: "B0013803",
+    details: "Fufu (1), Banku(2), Bel-Aqua(1)...",
+    date: "Nov 06, 2024",
+    status: "Cancelled",
   },
 ];

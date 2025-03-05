@@ -3,7 +3,7 @@
 import { ColumnDef } from '@tanstack/react-table';
 import { CellAction } from './cell-action';
 export type Reviews = {
-  id: string;
+  id: number;
   name: string;
   date: string;
   review: string;

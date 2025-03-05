@@ -4,7 +4,7 @@ import { ColumnDef } from "@tanstack/react-table";
 import { CellAction } from "./cell-action";
 
 export type Restaurants = {
-  id: string;
+  id: number;
   name: string;
   representative: string;
   location: string;

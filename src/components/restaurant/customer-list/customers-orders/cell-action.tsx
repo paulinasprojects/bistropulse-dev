@@ -1,17 +1,21 @@
 "use client";
 
-import { Customers } from "./columns";
-import { EllipsisVertical, ShieldAlert, Pencil, Eye } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import toast from "react-hot-toast";
+import { CustomersOrders } from "./columns"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
-import { useRouter } from "next/navigation";
+import { Button } from "@/components/ui/button";
+import { EllipsisVertical, Trash, CopyIcon } from "lucide-react";
+
 
 interface Props {
-  data: Customers;
+  data: CustomersOrders;
 }
 
 export const CellAction = ({data}: Props) => {
-  const router = useRouter();
+  const onCopy = (orderId: string) => {
+    navigator.clipboard.writeText(orderId);
+    toast.success("Customer order coppied to clipboard")
+  };
 
   return (
     <DropdownMenu>
@@ -25,17 +29,13 @@ export const CellAction = ({data}: Props) => {
         <DropdownMenuLabel>
           Actions
         </DropdownMenuLabel>
-        <DropdownMenuItem onClick={() => router.push(`/restaurant-management/restaurant/1/customer-list/${data.id}`)}>
-          <Eye className="h-4 w-4"/>
-          View
+        <DropdownMenuItem onClick={() => onCopy(data.orderId)}>
+          <CopyIcon className="size-4"/>
+          Copy Id
         </DropdownMenuItem>
         <DropdownMenuItem>
-          <Pencil className="h-4 w-4"/>
-          Edit
-        </DropdownMenuItem>
-        <DropdownMenuItem>
-          <ShieldAlert className="h-4 w-4"/>
-          Disable
+          <Trash className="size-4"/>
+          Delete
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>

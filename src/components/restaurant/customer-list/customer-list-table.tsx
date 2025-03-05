@@ -42,7 +42,7 @@ export const CustomerListTable = () => {
                 )}
                 Filter
               </button>
-              <button className="w-[134px] h-[40px] text-[15px] font-medium bg-[#2A85FF] hover:bg-[#4291F8] text-white rounded-[4px]  max-sm:text-[12px]" onClick={() => router.push("/restaurant-management/restaurant/7d8d5912-feb8-48a0-9431-b6dc3d6ba81c/customer-list/add-customer")}>Add Customer</button>
+              <button className="w-[134px] h-[40px] text-[15px] font-medium bg-[#2A85FF] hover:bg-[#4291F8] text-white rounded-[4px]  max-sm:text-[12px]" onClick={() => router.push("/restaurant-management/restaurant/1/customer-list/add-customer")}>Add Customer</button>
               <button className="flex items-center px-2 text-[15px] font-medium gap-2 bg-[#efefef] w-[114px] h-[40px] rounded-[4px] max-sm:hidden">
                 <FileUp className="size-6"/>
                 Export

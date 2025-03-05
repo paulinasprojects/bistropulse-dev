@@ -1,3 +1,4 @@
+import { CustomerOrders } from "./customers-orders/customer-orders";
 import { CustomerProfileOverview } from "./customer-profile-overview";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
@@ -7,7 +8,7 @@ const tabsData = [
     title: "Overview",
   },
   {
-    value: "orders",
+    value: "customer-orders",
     title: "Orders",
   },
   {
@@ -40,6 +41,9 @@ export const CustomerProfileTabs = () => {
       </TabsList>
       <TabsContent value="overview" className="max-sm:mt-[200px] md:mt-16 xl:mt-4">
         <CustomerProfileOverview/>
+      </TabsContent>
+      <TabsContent value="customer-orders" className="max-sm:mt-[200px] md:mt-16 xl:mt-4">
+        <CustomerOrders/>
       </TabsContent>
     </Tabs>
   )
