@@ -78,3 +78,24 @@ export const addCustomerSchema = z.object({
   location: z.string().min(1, { message: "Location is required" }),
   student: z.boolean().default(false).optional(),
 });
+
+export enum FoodCategory {
+  Pizza = "Pizza",
+  Burger = "Burger",
+}
+
+export enum Sizes {
+  Small = "Small",
+  Medium = "Medium",
+  Large = "Large",
+}
+
+export const addFoodSchema = z.object({
+  category: z.nativeEnum(FoodCategory, {
+    message: "Food category is required",
+  }),
+  name: z.string().min(1, { message: "Name is required" }),
+  description: z.string().min(1, { message: "Description is requried" }),
+  sizes: z.nativeEnum(Sizes, { message: "Size is required" }),
+  price: z.coerce.number().min(1, { message: "Prize is requred" }),
+});
