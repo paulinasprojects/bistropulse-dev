@@ -826,3 +826,36 @@ export const FoodMenuListData = [
     status: "Disabled",
   },
 ];
+
+export const FoodCategoriesListData = [
+  {
+    id: 1,
+    name: "Burger",
+    items: 3,
+  },
+  {
+    id: 2,
+    name: "Pizza",
+    items: 2,
+  },
+  {
+    id: 3,
+    name: "Steak",
+    items: 2,
+  },
+  {
+    id: 4,
+    name: "Drinks",
+    items: 2,
+  },
+  {
+    id: 5,
+    name: "Alcohol",
+    items: 2,
+  },
+  {
+    id: 6,
+    name: "Water",
+    items: 2,
+  },
+];
