@@ -817,7 +817,7 @@ export const FoodMenuListData = [
     status: "Active",
   },
   {
-    id: 5,
+    id: 6,
     name: "Cheese Pizza",
     image:
       "https://res.cloudinary.com/dymlzmyuo/image/upload/v1741171789/b54bf726-6526-47ca-8549-e22b1c4b666a_xniu5m.png",
@@ -857,5 +857,56 @@ export const FoodCategoriesListData = [
     id: 6,
     name: "Water",
     items: 2,
+  },
+];
+
+export const FoodExtrasListData = [
+  {
+    id: 1,
+    name: "Pepsi, 0.5 L",
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1741353358/1117cb6f-ff0e-423c-91ce-033b35438ab1_bkuc2p.png",
+    price: "$24.00",
+    status: "Active",
+  },
+  {
+    id: 2,
+    name: "Bottle of water",
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1741353400/601d51f5-4aff-47c9-a963-aaa2e3376291_jaz9lp.png",
+    price: "$14.00",
+    status: "Disabled",
+  },
+  {
+    id: 3,
+    name: "Fries",
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1741353430/6f5acb31-5fe6-4a9a-aa2c-0fedd1738b14_dr4wkn.png",
+    price: "$9.00",
+    status: "Active",
+  },
+  {
+    id: 4,
+    name: "Cheddar Cheese",
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1741353358/1117cb6f-ff0e-423c-91ce-033b35438ab1_bkuc2p.png",
+    price: "$11.00",
+    status: "Disabled",
+  },
+  {
+    id: 5,
+    name: "Mozzarella Cheese",
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1741353400/601d51f5-4aff-47c9-a963-aaa2e3376291_jaz9lp.png",
+    price: "$6.00",
+    status: "Active",
+  },
+  {
+    id: 6,
+    name: "Sprite",
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1741353430/6f5acb31-5fe6-4a9a-aa2c-0fedd1738b14_dr4wkn.png",
+    price: "$28.00",
+    status: "Disabled",
   },
 ];
