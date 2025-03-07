@@ -135,6 +135,18 @@ body {
 }
 
 
+.delete-category-modal {
+  width: 480px;
+  height: 248px;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  z-index: 50;
+}
+
 .test-modal {
   width: 480px;
   height: 292px;
