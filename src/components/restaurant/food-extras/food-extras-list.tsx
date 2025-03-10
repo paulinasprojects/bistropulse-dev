@@ -1,5 +1,6 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 import { FileUp, SearchIcon, Filter } from "lucide-react";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { FoodExtrasListData } from "@/lib/data";
@@ -9,6 +10,8 @@ import { columns } from "./columns";
 import { CardHeading } from "@/components/card-heading";
 
 export const FoodExtrasList = () => {
+  const router = useRouter();
+
   return (
     <>
     <Card>
@@ -26,7 +29,7 @@ export const FoodExtrasList = () => {
               <Filter className="size-6 text-[#6F767E]"/>
               Filter
             </button>
-            <button className="w-[92px] h-[40px] text-[15px] font-medium bg-[#2A85FF] hover:bg-[#4291F8] text-white rounded-[4px] max-sm:text-[12px]">Add Extra</button>
+            <button className="w-[92px] h-[40px] text-[15px] font-medium bg-[#2A85FF] hover:bg-[#4291F8] text-white rounded-[4px] max-sm:text-[12px]" onClick={() => router.push("/restaurant-management/restaurant/1/food-menu/food-extras/add-extra")}>Add Extra</button>
             <button className="flex items-center px-2 text-[15px] font-medium gap-2 bg-[#efefef] w-[114px] h-[40px] rounded-[4px] max-sm:hidden">
               <FileUp className="size-6"/>
               Export
