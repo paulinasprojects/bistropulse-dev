@@ -910,3 +910,66 @@ export const FoodExtrasListData = [
     status: "Disabled",
   },
 ];
+
+export const CustomersFavoriteRestaurantsData = [
+  {
+    id: 1,
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1741595996/mathew-schwartz-GjzJFMnJZYg-unsplash_ytqjjw.jpg",
+    name: "Sun valley restaurant",
+    rating: 4.8,
+    deliveryTime: "15-20 min",
+    location: "Aueduase",
+    discount: 10,
+  },
+  {
+    id: 2,
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1741596093/maria-orlova-oMTlhdFUhdI-unsplash_vzjwc5.jpg",
+    name: "Moon valley restaurant",
+    rating: 4.8,
+    deliveryTime: "15-20 min",
+    location: "Aueduase",
+    discount: 15,
+  },
+  {
+    id: 3,
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1741596209/nick-karvounis-Ciqxn7FE4vE-unsplash_btrekg.jpg",
+    name: "Queenstown Public House",
+    rating: 4.8,
+    deliveryTime: "15-20 min",
+    location: "Aueduase",
+    discount: 10,
+  },
+  {
+    id: 4,
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1741596302/jason-leung-poI7DelFiVA-unsplash_mplsvt.jpg",
+    name: "Top of the Mark",
+    rating: 4.8,
+    deliveryTime: "15-20 min",
+    location: "Aueduase",
+    discount: 10,
+  },
+  {
+    id: 5,
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1741599160/andrew-seaman-sQopSb2K0CU-unsplash_we2eos.jpg",
+    name: "Mirazur",
+    rating: 4.8,
+    deliveryTime: "15-20 min",
+    location: "Aueduase",
+    discount: 15,
+  },
+  {
+    id: 6,
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1741596403/louis-hansel-wVoP_Q2Bg_A-unsplash_lgazwa.jpg",
+    name: "Red Canappe",
+    rating: 4.8,
+    deliveryTime: "15-20 min",
+    location: "Aueduase",
+    discount: 10,
+  },
+];

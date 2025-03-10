@@ -13,6 +13,9 @@ const config: Config = {
       fontFamily: {
         inter: "var(--font-inter)",
       },
+      gridTemplateColumns: {
+        240: "repeat(3, 240px)",
+      },
       colors: {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
