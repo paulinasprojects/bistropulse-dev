@@ -973,3 +973,46 @@ export const CustomersFavoriteRestaurantsData = [
     discount: 10,
   },
 ];
+
+export const CustomersReviewsAndRatingsData = [
+  {
+    id: "#B001350",
+    restaurantName: "Star Valley Restaurant",
+    dishImage:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1741171757/044e3eec-60f8-49bc-9037-5a7efd26547b_cipyko.png",
+    dishName: "Beef onion pizza",
+    review: "The Beef onion pizza is one of the best dishes",
+    reviewDate: "Sat, Nov 28",
+    reviewTime: "08:30 PM",
+  },
+  {
+    id: "#B001450",
+    restaurantName: "Queenstown Public House",
+    dishImage:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1741171818/dfb01624-c24f-4bb7-a5fe-dc7a40b06d3c_uyuu2a.png",
+    dishName: "Beef Burger",
+    review: "The Beef burger was delicious",
+    reviewDate: "Sat, Dec 05",
+    reviewTime: "12:30 AM",
+  },
+  {
+    id: "#B004150",
+    restaurantName: "Mirazur",
+    dishImage:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1741171839/095a50b9-6f94-4c87-873e-a79c9a263810_vjylr3.png",
+    dishName: "Chicken Burger",
+    review: "The chicken burger was delicious and full of flavor",
+    reviewDate: "Sat, Dec 11",
+    reviewTime: "14:30 AM",
+  },
+  {
+    id: "#B012150",
+    restaurantName: "Red Canappe",
+    dishImage:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1741171789/b54bf726-6526-47ca-8549-e22b1c4b666a_xniu5m.png",
+    dishName: "Cheese Pizza",
+    review: "The cheese pizza crust was super crispy",
+    reviewDate: "Sat, Dec 29",
+    reviewTime: "11:30 AM",
+  },
+];

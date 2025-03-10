@@ -2,6 +2,7 @@ import { CustomerOrders } from "./customers-orders/customer-orders";
 import { CustomerProfileOverview } from "./customer-profile-overview";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { CustomersFavoriteRestaurants } from "./customer-favorite-restaurants";
+import { CustomersReviewsAndRatings } from "./customers-reviews-and-ratings";
 
 const tabsData = [
   {
@@ -17,7 +18,7 @@ const tabsData = [
     title: "Fav Restaurants",
   },
   {
-    value: "reviews & ratings",
+    value: "reviews-ratings",
     title: "Reviews & Ratings",
   },
   {
@@ -48,6 +49,9 @@ export const CustomerProfileTabs = () => {
       </TabsContent>
       <TabsContent value="favorite-restaurants" className="max-sm:mt-[200px] md:mt-16 xl:mt-4">
         <CustomersFavoriteRestaurants/>
+      </TabsContent>
+      <TabsContent value="reviews-ratings" className="max-sm:mt-[200px] md:mt-16 xl:mt-4">
+        <CustomersReviewsAndRatings/>
       </TabsContent>
     </Tabs>
   )

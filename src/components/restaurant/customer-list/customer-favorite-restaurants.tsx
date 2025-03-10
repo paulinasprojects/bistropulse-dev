@@ -1,12 +1,12 @@
 "use client";
 
 import { useState } from "react";
-import { Card, CardContent } from "@/components/ui/card";
-import { CustomersFavoriteRestaurantsData } from "@/lib/data";
 import { ImStarFull } from "react-icons/im";
 import { TiHeartFullOutline } from "react-icons/ti";
 import Image from "next/image";
 import { MapPin } from "lucide-react";
+import { CustomersFavoriteRestaurantsData } from "@/lib/data";
+import { Card, CardContent } from "@/components/ui/card";
 
 export const CustomersFavoriteRestaurants = () => {
   const [likedRestaurants, setLikedRestaurants] = useState<{ [key: number]: boolean }>({});
@@ -36,7 +36,7 @@ export const CustomersFavoriteRestaurants = () => {
                 <p className="text-[12px] font-bold text-white mt-0.5">{data.discount}% OFF</p>
               </div>
               <div className="absolute w-[24px] h-[24px] bg-white rounded-full top-2 right-2 flex items-center justify-center" onClick={() => toggleLike(data.id)}>
-                <TiHeartFullOutline className="cursor-pointer size-4 transition-colors duration-300"  color={likedRestaurants[data.id] ? "red" : "black"}/>
+                <TiHeartFullOutline className="cursor-pointer size-4 transition-colors duration-300"  color={likedRestaurants[data.id] ? "black" : "red"}/>
               </div>
             </div>
             <div className="flex items-center justify-between pt-2.5 px-2.5">
