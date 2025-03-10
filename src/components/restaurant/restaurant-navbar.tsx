@@ -13,7 +13,7 @@ export const RestaurantNavbar = () => {
             <MdKeyboardArrowLeft className="size-5"/>
             Kalavuna Restaurant
           </Link>
-          <div className="max-sm:hidden md:hidden lg:flex items-center gap-[7px]">
+          <div className="hidden lg:flex items-center gap-[7px]">
             <Link href="/restaurant-management" className="text-sm font-medium hover:text-[#2A85FF]">Restaurant Management</Link>
             <MdKeyboardArrowRight />
             <Link href="/restaurant-management/restaurant/1" className="text-[12px] font-normal text-[#6F767E] hover:text-[#2A85FF]">

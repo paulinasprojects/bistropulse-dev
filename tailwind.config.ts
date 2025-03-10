@@ -15,6 +15,7 @@ const config: Config = {
       },
       gridTemplateColumns: {
         240: "repeat(3, 240px)",
+        393: "repeat(2, 395px)",
       },
       colors: {
         background: "hsl(var(--background))",
