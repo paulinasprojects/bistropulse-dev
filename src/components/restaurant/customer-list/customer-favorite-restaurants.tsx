@@ -33,7 +33,7 @@ export const CustomersFavoriteRestaurants = () => {
                 className="rounded-tl-[8px] rounded-tr-[8px] cursor-pointer"
               />
               <div className="absolute top-2 left-0  w-[65px] h-[23px] rounded-tr-[6px] rounded-br-[6px] bg-[#27AE60] text-center">
-                <p className="text-[12px] font-bold text-white mt-0.5">{data.discount}% OFF</p>
+                <p className="text-xs font-bold text-white mt-0.5">{data.discount}% OFF</p>
               </div>
               <div className="absolute w-[24px] h-[24px] bg-white rounded-full top-2 right-2 flex items-center justify-center" onClick={() => toggleLike(data.id)}>
                 <TiHeartFullOutline className="cursor-pointer size-4 transition-colors duration-300"  color={likedRestaurants[data.id] ? "black" : "red"}/>
@@ -45,12 +45,12 @@ export const CustomersFavoriteRestaurants = () => {
               </div>
                 <div className="flex items-center gap-[2.5px]">
                 <ImStarFull className="size-2.5 text-[#F69133]"/>
-                <p className="text-[12px] font-medium">{data.rating}</p>
+                <p className="text-xs font-medium">{data.rating}</p>
               </div>
               </div>
                 <div className="flex gap-2  pl-2.5 mt-[3px] mb-2">
-                <p className="text-[12px] font-medium text-[#828282]">{data.deliveryTime} •</p>
-                <p className="flex items-center gap-[4px] text-[12px] font-medium text-[#828282]">
+                <p className="text-xs font-medium text-[#828282]">{data.deliveryTime} •</p>
+                <p className="flex items-center gap-[4px] text-xs font-medium text-[#828282]">
                   <MapPin className="size-2.5"/>
                   {data.location}
                 </p>

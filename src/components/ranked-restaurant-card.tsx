@@ -27,12 +27,12 @@ export const RankedRestaurantCard = () => {
                   alt='restaurant-image'
                 />
                 <div className="flex flex-col item gap-2">
-                  <p className='text-[16px] font-semibold text-[#111315]'>{data.restaurantName}</p>
-                  <p className='text-[12px] font-normal text-[#6F767E]'>{data.restaurantAdress}</p>
+                  <p className='text-md font-semibold text-textBlackColor'>{data.restaurantName}</p>
+                  <p className='text-xs font-normal text-textColor'>{data.restaurantAdress}</p>
                 </div>
                 <div className="ml-auto">
-                  <p className='text-xl font-bold text-[#111315]'>{data.restaurantOrders}</p>
-                  <p className='text-[12px] font-normal text-[#6F767E]'>Orders</p>
+                  <p className='text-xl font-bold text-textBlackColor'>{data.restaurantOrders}</p>
+                  <p className='text-xs font-normal text-textColor'>Orders</p>
                 </div>
               </div>
             </div>

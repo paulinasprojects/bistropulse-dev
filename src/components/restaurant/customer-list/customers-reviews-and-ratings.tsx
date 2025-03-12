@@ -16,8 +16,8 @@ export const CustomersReviewsAndRatings = () => {
                 <Ellipsis className="cursor-pointer"/>
               </div>
               <div className="mt-3 flex items-center justify-between">
-                <p className="text-[16px] font-semibold text-[#131313]">{data.restaurantName}</p>
-                <div className="flex items-center gap-1.5 text-[#6F767E] text-[12px] font-normal">
+                <p className="text-md font-semibold text-[#131313]">{data.restaurantName}</p>
+                <div className="flex items-center gap-1.5 text-textColor text-xs font-normal">
                   <p className="">{data.reviewDate}</p>
                     •
                     <p>{data.reviewTime}</p>
@@ -33,10 +33,10 @@ export const CustomersReviewsAndRatings = () => {
                     className="hidden md:block"
                   />
                   <div className="flex item flex-col">
-                    <p className="text-[15px] font-medium text-[#333]">
+                    <p className="text-ms font-medium text-[#333]">
                       {data.dishName}
                     </p>
-                    <p className="text-sm font-normal text-[#6F767E]">{data.review}</p>
+                    <p className="text-sm font-normal text-textColor">{data.review}</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-1.5">
@@ -45,7 +45,7 @@ export const CustomersReviewsAndRatings = () => {
                   <ImStarFull className="text-[#FFC451]"/>
                   <ImStarFull className="text-[#FFC451]"/>
                   <ImStarEmpty/>
-                  <p className="text-[#6F767E] text-[12px] font-normal">(Good)</p>
+                  <p className="text-textColor text-xs font-normal">(Good)</p>
                 </div>
               </div>
             </CardContent>

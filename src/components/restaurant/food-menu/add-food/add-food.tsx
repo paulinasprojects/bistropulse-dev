@@ -11,12 +11,12 @@ export const AddFood = () => {
           title="Add Food"
         />
         <div className="mt-10 flex max-sm:flex-col items-center lg:flex-row gap-[42px] xl:px-[227px] max-sm:items-center">
-        <label htmlFor="inputField" className="w-[328px] lg:h-[155px] md:h-[120px] max-sm:h-[130px] border-[1px] border-dotted border-[#2A85FF] rounded-[8px] flex items-center justify-center cursor-pointer">
-            <p className="text-[#2A85FF] text-sm font-medium">+ Add Photo</p>
+        <label htmlFor="inputField" className="w-[328px] lg:h-[155px] md:h-[120px] max-sm:h-[130px] border-[1px] border-dotted border-buttonColor rounded-[8px] flex items-center justify-center cursor-pointer">
+            <p className="text-buttonColor text-sm font-medium">+ Add Photo</p>
           </label>
           <input type="file"  className="file-button" title=" " style={{display: "none"}} id="inputField"/>
           <div className="flex gap-2">
-            <button className="flex items-center justify-center gap-1.5 bg-[#2A85FF] hover:bg-[#4291f8] text-white rounded-[4px] w-[179px] h-[44px] text-[15px] font-bold">
+            <button className="flex items-center justify-center gap-1.5 bg-buttonColor hover:bg-buttonHover text-white rounded-[4px] w-[179px] h-[44px] text-ms font-bold">
               <Plus/>
               Restaurant Image
             </button>

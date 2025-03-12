@@ -79,8 +79,8 @@ export function TotalRevenueCard() {
               height={43}
             />
             <div className="flex flex-col gap-1">
-              <span className='text-[16px] font-normal text-[#6F767E] leading-[20px]'>Income</span>
-              <span className='xl:text-3xl md:text-2xl font-bold leading-[38px] text-[#111315]'>$1,390,39</span>
+              <span className='text-md font-normal text-textColor leading-[20px]'>Income</span>
+              <span className='xl:text-3xl md:text-2xl font-bold leading-[38px] text-textBlackColor'>$1,390,39</span>
             </div>
           </div>
           <div className="flex gap-4">
@@ -91,8 +91,8 @@ export function TotalRevenueCard() {
               height={43}
             />
             <div className="flex flex-col gap-1">
-              <span className='text-[16px] font-normal text-[#6F767E] leading-[20px]'>Expenses</span>
-              <span className='xl:text-3xl md:text-2xl font-bold leading-[38px] text-[#111315]'>$1,390,39</span>
+              <span className='text-md font-normal text-textColor leading-[20px]'>Expenses</span>
+              <span className='xl:text-3xl md:text-2xl font-bold leading-[38px] text-textBlackColor'>$1,390,39</span>
             </div>
           </div>
         </div>

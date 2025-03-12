@@ -16,7 +16,7 @@ export const TotalRevenueDropdownMenu = () => {
 
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger className="w-[95px] h-[34px] flex items-center justify-center gap-1.5 text-[15px] font-normal text-[#6F767E] border-[1px] border-[#EFEFEF] rounded-[5px] px-2">
+      <DropdownMenuTrigger className="w-[95px] h-[34px] flex items-center justify-center gap-1.5 text-ms font-normal text-textColor border-[1px] border-[#EFEFEF] rounded-[5px] px-2">
         {selected}
         <ArrowDown className="size-4"/>
       </DropdownMenuTrigger>

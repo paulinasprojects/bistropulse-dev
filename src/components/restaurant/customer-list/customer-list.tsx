@@ -15,8 +15,8 @@ export const CustomerList = () => {
             className="object-contain"
           />
           <div className="flex flex-col gap-2">
-            <p className="text-[#33383F] font-semibold text-[16px]">{data.name}</p>
-            <p className="text-[#6F767E] font-normal text-[12px]">{data.phone}</p>
+            <p className="text-[#33383F] font-semibold text-md">{data.name}</p>
+            <p className="text-textColor font-normal text-xs">{data.phone}</p>
           </div>
         </div>
       ))}

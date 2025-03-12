@@ -131,7 +131,7 @@ export const AddFoodForm = () => {
               </FormItem>
              )} 
             />
-            <Button type="submit" className="w-[96px] h-[44px] bg-[#2A85FF] hover:bg-[#4291F8] text-white">Add Food</Button>
+            <Button type="submit" className="w-[96px] h-[44px] bg-buttonColor hover:bg-buttonHover text-white">Add Food</Button>
           </div>
         </form>
       </Form>

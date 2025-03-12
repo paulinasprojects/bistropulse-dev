@@ -12,7 +12,7 @@ export const CustomerProfile = () => {
       />
       <div className="relative mt-5">
         <input type="text" placeholder="Search" className="w-[274px] h-[44px] rounded-[4px] pl-[35px]  border-[1px] outline-[#a9adb1]" />
-        <SearchIcon className="absolute top-3 left-2 text-[#6F767E] size-[19px]"/>
+        <SearchIcon className="absolute top-3 left-2 text-textColor size-[19px]"/>
       </div>
       <CustomerList/>
       </CardContent>

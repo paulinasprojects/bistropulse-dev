@@ -14,10 +14,10 @@ export const CustomerOrders = () => {
           <div className="flex gap-2">
             <div className="relative">
               <input type="text" placeholder="Search" className="pl-[27px] w-[100px] h-[40px] rounded-[4px] border-[#EFEFEF] border-[1px]" />
-              <SearchIcon className="absolute top-2.5 left-1.5 size-[19px] text-[#6F767E]"/>
+              <SearchIcon className="absolute top-2.5 left-1.5 size-[19px] text-textColor"/>
             </div>
             <button className="flex items-center justify-center w-10 h-10 border-[#EFEFEF] border-[1px] hover:bg-[#EFEFEF]">
-              <LayoutGrid className="text-[#6F767E]"/>
+              <LayoutGrid className="text-textColor"/>
             </button>
           </div>
         </div>

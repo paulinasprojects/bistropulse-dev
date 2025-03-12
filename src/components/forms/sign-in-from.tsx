@@ -43,7 +43,7 @@ export const SignInForm = () => {
         height={51}
         className=""
       />
-      <p className="mt-8 text-sm font-semibold leading-[24px] text-[#111315]">Sign in with Email and Password</p>
+      <p className="mt-8 text-sm font-semibold leading-[24px] text-textBlackColor">Sign in with Email and Password</p>
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)}>
           <div className="mt-3 flex flex-col gap-3">
@@ -71,8 +71,8 @@ export const SignInForm = () => {
                 </FormItem>
               )}
             />
-            <Button type="submit" className="bg-[#2A85FF] text-white rounded-[4px] max-w-[400px] max-sm:max-w-[300px] text-[15px] font-semibold leading-[24px]">Sign in</Button>
-            <Button variant="outline" className="mt-3 text-black rounded-[4px] max-w-[400px] max-sm:max-w-[300px] border-[1px] text-[15px] font-semibold leading-[24px] border-[#6F767E] flex items-center gap-5">
+            <Button type="submit" className="bg-buttonColor text-white rounded-[4px] max-w-[400px] max-sm:max-w-[300px] text-ms font-semibold leading-[24px]">Sign in</Button>
+            <Button variant="outline" className="mt-3 text-black rounded-[4px] max-w-[400px] max-sm:max-w-[300px] border-[1px] text-ms font-semibold leading-[24px] border-[#6F767E] flex items-center gap-5">
               <FcGoogle/>
               Sign in with Google
             </Button>

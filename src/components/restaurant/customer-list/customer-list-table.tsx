@@ -32,18 +32,18 @@ export const CustomerListTable = () => {
             <div className="flex items-center gap-2 lg:ml-auto max-sm:ml-5">
               <div className="relative">
                 <input type="text" placeholder="Search" className="w-[104px] h-[40px] pl-8 border-[1px] border-[#F4F4D4] rounded-[4px]" />
-                <SearchIcon className="absolute top-2 left-1 size-6 text-[#6F767E]"/>
+                <SearchIcon className="absolute top-2 left-1 size-6 text-textColor"/>
               </div>
-              <button className="flex items-center justify-center gap-2 border-[1px] border-[#f4f4f4] rounded-[4px] w-[87px] h-[40px] px-2 text-[15px] font-normal text-[#9A9FA5]" onClick={() => OpenModal()}>
+              <button className="flex items-center justify-center gap-2 border-[1px] border-[#f4f4f4] rounded-[4px] w-[87px] h-[40px] px-2 text-ms font-normal text-[#9A9FA5]" onClick={() => OpenModal()}>
                 {openFilterModal ? (
-                  <X className="size-6 text-[#6F767E]"/>
+                  <X className="size-6 text-textColor"/>
                 ) : (
-                  <Filter className="size-6 text-[#6F767E]"/>
+                  <Filter className="size-6 text-textColor"/>
                 )}
                 Filter
               </button>
-              <button className="w-[134px] h-[40px] text-[15px] font-medium bg-[#2A85FF] hover:bg-[#4291F8] text-white rounded-[4px]  max-sm:text-[12px]" onClick={() => router.push("/restaurant-management/restaurant/1/customer-list/add-customer")}>Add Customer</button>
-              <button className="flex items-center px-2 text-[15px] font-medium gap-2 bg-[#efefef] w-[114px] h-[40px] rounded-[4px] max-sm:hidden">
+              <button className="w-[134px] h-[40px] text-ms font-medium bg-buttonColor hover:bg-buttonHover text-white rounded-[4px]  max-sm:text-xs" onClick={() => router.push("/restaurant-management/restaurant/1/customer-list/add-customer")}>Add Customer</button>
+              <button className="flex items-center px-2 text-ms font-medium gap-2 bg-[#efefef] w-[114px] h-[40px] rounded-[4px] max-sm:hidden">
                 <FileUp className="size-6"/>
                 Export
                 <MdKeyboardArrowDown className="size-5"/>

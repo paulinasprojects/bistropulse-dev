@@ -28,7 +28,7 @@ export const AddExtrasForm = () => {
   return (
     <div className="mt-[60px]">
       <div className="flex max-sm:flex-col items-center lg:flex-row gap-[42px] xl:px-[227px] max-sm:items-center">
-        <label htmlFor="add-extra-input" className="w-[140px] h-[140px] border-[1px] border-dotted border-[#2A85FF] rounded-[8px] flex items-center justify-center cursor-pointer">
+        <label htmlFor="add-extra-input" className="w-[140px] h-[140px] border-[1px] border-dotted border-buttonColor rounded-[8px] flex items-center justify-center cursor-pointer">
           <Image
             src="/glass.png"
             alt="glass"
@@ -38,7 +38,7 @@ export const AddExtrasForm = () => {
         </label>
         <input type="file" id="add-extra-input" title=" " style={{display: "none"}} />
         <div className="flex gap-2">
-          <button className="flex items-center justify-center gap-1.5 bg-[#2A85FF] hover:bg-[#4291f8] text-white rounded-[4px] w-[136px] h-[44px] text-[15px] font-bold">
+          <button className="flex items-center justify-center gap-1.5 bg-buttonColor hover:bg-buttonHover text-white rounded-[4px] w-[136px] h-[44px] text-ms font-bold">
             <Plus/>
             Food Image
           </button>
@@ -75,7 +75,7 @@ export const AddExtrasForm = () => {
                   </FormItem>
                 )}
               />
-              <Button type="submit" className="w-[136px] h-[44px] bg-[#2A85FF] hover:bg-[#4291F8] text-white">Add Extra Food</Button>
+              <Button type="submit" className="w-[136px] h-[44px] bg-buttonColor hover:bg-buttonHover text-white">Add Extra Food</Button>
             </div>
           </form>
         </Form>

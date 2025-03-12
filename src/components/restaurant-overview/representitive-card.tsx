@@ -17,16 +17,16 @@ export const RepresentitiveCard = () => {
             width={100}
             height={100}
           />
-          <p className="text-xl font-bold text-[#1A1D1F]">John Doe</p>
+          <p className="text-xl font-bold text-textBlackColor">John Doe</p>
         </div>
         <div className="flex flex-col gap-2 mt-[30px]">
-          <p className="text-[#6F767E] font-normal text-sm">Phone Number</p>
-          <p className="text-[16px] font-semibold text-[#33383F]">(480) 555-0103</p>
+          <p className="text-textColor font-normal text-sm">Phone Number</p>
+          <p className="text-md font-semibold text-[#33383F]">(480) 555-0103</p>
         </div>
         <Separator className="my-[14px]"/>
         <div className="flex flex-col gap-2">
-          <p className="text-[#6F767E] font-normal text-sm">Location</p>
-          <p className="text-[16px] font-semibold text-[#33383F]">Asafoatse Nettey Road, Accra...</p>
+          <p className="text-textColor font-normal text-sm">Location</p>
+          <p className="text-md font-semibold text-[#33383F]">Asafoatse Nettey Road, Accra...</p>
         </div>
       </CardContent>
     </Card>

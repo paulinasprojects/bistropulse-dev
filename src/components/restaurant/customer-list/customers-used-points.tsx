@@ -12,7 +12,7 @@ export const CustomersUsedPoints = () => {
         <div className="mt-6">
           <div className="flex gap-3">
             <div className="w-[44px] h-[44px] bg-[#219653] rounded-full">
-              <p className="text-white text-[11px] font-bold text-center mt-1.5">Earn Cash</p>
+              <p className="text-white text-xxs font-bold text-center mt-1.5">Earn Cash</p>
             </div>
             <div className="flex flex-col gap-[4px]">
               <p className="text-sm font-medium">Get $50 on your mobile wallet</p>
@@ -24,7 +24,7 @@ export const CustomersUsedPoints = () => {
         <div className="">
           <div className="flex gap-3">
             <div className="w-[44px] h-[44px] bg-[#219653] rounded-full">
-              <p className="text-white text-[11px] font-bold text-center mt-1.5">Earn Cash</p>
+              <p className="text-white text-xxs font-bold text-center mt-1.5">Earn Cash</p>
             </div>
             <div className="flex flex-col gap-[4px]">
               <p className="text-sm font-medium">Get $50 on your mobile wallet</p>
@@ -36,7 +36,7 @@ export const CustomersUsedPoints = () => {
         <div className="">
           <div className="flex gap-3">
             <div className="w-[44px] h-[44px] bg-[#219653] rounded-full">
-              <p className="text-white text-[11px] font-bold text-center mt-1.5">Earn Cash</p>
+              <p className="text-white text-xxs font-bold text-center mt-1.5">Earn Cash</p>
             </div>
             <div className="flex flex-col gap-[4px]">
               <p className="text-sm font-medium">Get $50 on your mobile wallet</p>
@@ -48,7 +48,7 @@ export const CustomersUsedPoints = () => {
         <div className="">
           <div className="flex gap-3">
             <div className="w-[44px] h-[44px] bg-[#219653] rounded-full">
-              <p className="text-white text-[11px] font-bold text-center mt-1.5">Earn Cash</p>
+              <p className="text-white text-xxs font-bold text-center mt-1.5">Earn Cash</p>
             </div>
             <div className="flex flex-col gap-[4px]">
               <p className="text-sm font-medium">Get $50 on your mobile wallet</p>
@@ -60,7 +60,7 @@ export const CustomersUsedPoints = () => {
         <div className="">
           <div className="flex gap-3">
             <div className="w-[44px] h-[44px] bg-[#219653] rounded-full">
-              <p className="text-white text-[11px] font-bold text-center mt-1.5">Earn Cash</p>
+              <p className="text-white text-xxs font-bold text-center mt-1.5">Earn Cash</p>
             </div>
             <div className="flex flex-col gap-[4px]">
               <p className="text-sm font-medium">Get $50 on your mobile wallet</p>

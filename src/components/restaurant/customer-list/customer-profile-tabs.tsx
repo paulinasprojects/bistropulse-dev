@@ -36,7 +36,7 @@ export const CustomerProfileTabs = () => {
           <TabsTrigger
             key={data.value}
             value={data.value}
-            className="data-[state=active]:text-[#2A85FF] data-[state=active]:border-b-[1.5px] data-[state=active]:border-[#2A85FF] data-[state=active]:shadow-none rounded-none bg-white text-[15px] text-[#6F767E]"
+            className="data-[state=active]:text-buttonColor data-[state=active]:border-b-[1.5px] data-[state=active]:border-buttonColor data-[state=active]:shadow-none rounded-none bg-white text-ms text-textColor"
           >
             {data.title}
           </TabsTrigger>

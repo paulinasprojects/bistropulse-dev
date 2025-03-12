@@ -17,6 +17,12 @@ const config: Config = {
         240: "repeat(3, 240px)",
         393: "repeat(2, 395px)",
       },
+      fontSize: {
+        md: "16px",
+        ms: "15px",
+        xs: "12px",
+        xxs: "11px",
+      },
       colors: {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
@@ -68,6 +74,10 @@ const config: Config = {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        buttonColor: "var(--button-blue)",
+        buttonHover: "var(--button-hover)",
+        textColor: "var(--text-color)",
+        textBlackColor: "var(--text-black-color)",
       },
       borderRadius: {
         lg: "var(--radius)",

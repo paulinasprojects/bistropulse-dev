@@ -9,14 +9,14 @@ export const RestaurantNavbar = () => {
       <div className="flex w-full items-center justify-between">
         <div className="flex items-center gap-4">
           <SidebarTrigger className="hidden max-sm:block"/>
-          <Link href="/restaurant-management" className="flex items-center text-[#2A85FF] text-sm font-medium gap-2 hover:text-[#1A1D1F]">
+          <Link href="/restaurant-management" className="flex items-center text-buttonColor text-sm font-medium gap-2 hover:text-textBlackColor">
             <MdKeyboardArrowLeft className="size-5"/>
             Kalavuna Restaurant
           </Link>
           <div className="hidden lg:flex items-center gap-[7px]">
-            <Link href="/restaurant-management" className="text-sm font-medium hover:text-[#2A85FF]">Restaurant Management</Link>
+            <Link href="/restaurant-management" className="text-sm font-medium hover:text-buttonColor">Restaurant Management</Link>
             <MdKeyboardArrowRight />
-            <Link href="/restaurant-management/restaurant/1" className="text-[12px] font-normal text-[#6F767E] hover:text-[#2A85FF]">
+            <Link href="/restaurant-management/restaurant/1" className="text-xs font-normal text-textColor hover:text-buttonColor">
               Restaurant
             </Link>
           </div>

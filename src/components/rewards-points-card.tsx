@@ -19,7 +19,7 @@ export const RewardsPointsCard = () => {
                 <img src="/shield.png" alt="shield" className='object-cover' />
               </div>
               <div className="">
-                <p className='text-[16px] font-normal text-[#818C99]'>Total Points</p>
+                <p className='text-md font-normal text-[#818C99]'>Total Points</p>
                 <p className='text-2xl font-bold text-[#131313]'>2770</p>
               </div>
             </div>
@@ -30,7 +30,7 @@ export const RewardsPointsCard = () => {
                 <img src="/shield.png" alt="shield" className='object-cover' />
               </div>
               <div>
-                <p className='text-[16px] font-normal text-[#818C99]'>Total Points</p>
+                <p className='text-md font-normal text-[#818C99]'>Total Points</p>
                 <p className='text-2xl font-bold text-[#131313]'>770</p>
               </div>
             </div>

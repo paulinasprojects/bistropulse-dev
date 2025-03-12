@@ -1,4 +1,5 @@
 import { CustomersCard } from "../customers-card"
+import { DivContainer } from "../div-container"
 import { OrderCard } from "../order-card"
 import { RankedRestaurantCard } from "../ranked-restaurant-card"
 import { RecentOrdersRequests } from "../recent-orders-requests"
@@ -12,7 +13,7 @@ import { TotalRevenueCard } from "../total-revenue-card"
 
 export const HomeView = () => {
   return (
-    <div className="bg-[#F4F4F4] min-h-screen pl-[24px] pt-[16px] md:pl-[12px] md:pr-[12px] max-sm:pl-[12px] max-sm:pr-[12px] pb-6">
+    <DivContainer>
       <div className="flex flex-col gap-4">
         <OrderCard/>
         <RecentOrdersRequests/>
@@ -36,6 +37,6 @@ export const HomeView = () => {
           <RidersCard/>
         </div>
       </div>
-    </div>
+    </DivContainer>
   )
 }

@@ -117,22 +117,22 @@ export const RidersCard = () => {
           <div className='flex gap-3'>
             <span className='w-[30px] h-[4px] bg-[#F04D58] rounded-full mt-2'/>
             <div className="flex flex-col">
-            <span className='text-[12px] font-normal text-[#6F767E]'>Inactive</span>
-            <span className='text-[16px] font-semibold text-[#111315]'>420 Riders</span>
+            <span className='text-xs font-normal text-textColor'>Inactive</span>
+            <span className='text-md font-semibold text-textBlackColor'>420 Riders</span>
             </div>
           </div>
           <div className='flex gap-3'>
           <span className='w-[30px] h-[4px] bg-[#2796AE] rounded-full mt-2'/>
             <div className="flex flex-col">
-              <span className='text-[12px] font-normal text-[#6F767E]'>Roaming</span>
-              <span className='text-[16px] font-semibold text-[#111315]'>520 Riders</span>
+              <span className='text-xs font-normal text-textColor'>Roaming</span>
+              <span className='text-md font-semibold text-textBlackColor'>520 Riders</span>
             </div>
           </div>
           <div className='flex gap-3'>
           <span className='w-[30px] h-[4px] bg-[#39C272] rounded-full mt-2'/>
           <div className="flex flex-col">
-            <span className='text-[12px] font-normal text-[#6F767E]'>Traveling</span>
-            <span className='text-[16px] font-semibold text-[#111315]'>839 Riders</span>
+            <span className='text-xs font-normal text-textColor'>Traveling</span>
+            <span className='text-md font-semibold text-textBlackColor'>839 Riders</span>
           </div>
           </div>
         </div>

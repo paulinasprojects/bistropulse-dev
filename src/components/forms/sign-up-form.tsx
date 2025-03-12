@@ -44,7 +44,7 @@ export const SignUpForm = () => {
           width={219}
           height={51}
         />
-        <p className="mt-8 text-sm font-semibold leading-[24px] text-[#111315]">Sign up with Email and Password</p>
+        <p className="mt-8 text-sm font-semibold leading-[24px] text-textBlackColor">Sign up with Email and Password</p>
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)}>
             <div className="mt-3 flex flex-col gap-3">
@@ -72,8 +72,8 @@ export const SignUpForm = () => {
                   </FormItem>
                 )}
               />
-              <Button type="submit" className="bg-[#2A85FF] text-white rounded-[4px] max-w-[400px] max-sm:max-w-[300px] text-[15px] font-semibold leading-[24px]">Sign up</Button>
-              <Button variant="outline" className="mt-3 text-black rounded-[4px] max-w-[400px] max-sm:w-[300px] border-[1px] border-[#6F767E] text-[15px] font-semibold leading-[24px] flex items-center gap-5">
+              <Button type="submit" className="bg-buttonColor text-white rounded-[4px] max-w-[400px] max-sm:max-w-[300px] text-ms font-semibold leading-[24px]">Sign up</Button>
+              <Button variant="outline" className="mt-3 text-black rounded-[4px] max-w-[400px] max-sm:w-[300px] border-[1px] border-[#6F767E] text-ms font-semibold leading-[24px] flex items-center gap-5">
                 <FcGoogle/>
                 Sign up with Google
               </Button>

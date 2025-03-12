@@ -143,7 +143,7 @@ export const AddCustomerForm = () => {
                 </FormItem>
               )}
             />
-            <Button type='submit' className='w-[138px] h-[44px] bg-[#2A85FF] hover:bg-[#4291f8]'>
+            <Button type='submit' className='w-[138px] h-[44px] bg-buttonColor hover:bg-buttonHover'>
               Add Customer
             </Button>
           </div>

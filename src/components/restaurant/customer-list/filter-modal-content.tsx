@@ -9,7 +9,7 @@ export const FilterModalContent = () => {
       />
       <div className="flex flex-col gap-6">
         <div className="mt-5 flex flex-col gap-2.5">
-          <p className="text-sm font-semibold text-[#1A1D1F] leading-[24px]">Customer</p>
+          <p className="text-sm font-semibold text-textBlackColor leading-[24px]">Customer</p>
           <Select>
             <SelectTrigger className="w-[280px]">
               <SelectValue placeholder="Select Customer"/>
@@ -22,7 +22,7 @@ export const FilterModalContent = () => {
           </Select>
         </div>
         <div className="flex flex-col gap-2.5">
-          <p className="text-sm font-semibold text-[#1A1D1F] leading-[24px]">Status</p>
+          <p className="text-sm font-semibold text-textBlackColor leading-[24px]">Status</p>
           <Select>
             <SelectTrigger className="w-[280px]">
               <SelectValue placeholder="Select Status"/>
@@ -35,8 +35,8 @@ export const FilterModalContent = () => {
         </div>
       </div>
       <div className="flex items-center gap-3 mt-10">
-        <button className="w-[132px] h-[48px] text-[15px] font-semibold leading-[24px] rounded-[4px] border-[1px] border-[#1A1D1F] hover:bg-[#f7f6f6]">Clear Filter</button>
-        <button className="w-[136px] h-[48px] text-[15px] font-semibold leading-[24px] rounded-[4px] bg-[#2A85FF] hover:bg-[#4291f8] text-white">Apply Filter</button>
+        <button className="w-[132px] h-[48px] text-ms font-semibold leading-[24px] rounded-[4px] border-[1px] border-[#1A1D1F] hover:bg-[#f7f6f6]">Clear Filter</button>
+        <button className="w-[136px] h-[48px] text-ms font-semibold leading-[24px] rounded-[4px] bg-buttonColor hover:bg-buttonHover text-white">Apply Filter</button>
       </div>
     </div>
   )
