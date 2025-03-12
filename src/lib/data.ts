@@ -1016,3 +1016,60 @@ export const CustomersReviewsAndRatingsData = [
     reviewTime: "11:30 AM",
   },
 ];
+
+export const SalesData = [
+  {
+    id: 1,
+    dishName: "Beef onion pizza",
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1741770989/unsplash_oBbTc1VoT-0_1_p8wuqa.png",
+    category: "Pizza",
+    price: "$28",
+    numberOfSales: "70 Sales",
+  },
+  {
+    id: 2,
+    dishName: "Cheese Pizza",
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1741771149/unsplash_uU0Anw-8Vsg_ywf2du.png",
+    category: "Pizza",
+    price: "$24",
+    numberOfSales: "89 Sales",
+  },
+  {
+    id: 3,
+    dishName: "Chicken Burger",
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1741771298/unsplash_J9lD6FS6_cs_gpc0cp.png",
+    category: "Burger",
+    price: "$11",
+    numberOfSales: "69 Sales",
+  },
+  {
+    id: 4,
+    dishName: "Beef Burger",
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1741771397/unsplash_mWgbglIHvOQ_al5cnj.png",
+    category: "Burger",
+    price: "$14",
+    numberOfSales: "40 Sales",
+  },
+  {
+    id: 5,
+    dishName: "Beef special pizza",
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1741771511/unsplash_MqT0asuoIcU_wbc1dx.png",
+    category: "Pizza",
+    price: "$29",
+    numberOfSales: "90 Sales",
+  },
+  {
+    id: 6,
+    dishName: "Pasta Bolognese",
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1741771585/nicholas-grande-d9jcPTRD9fo-unsplash_tpkovw.jpg",
+    category: "Pasta",
+    price: "$17",
+    numberOfSales: "70 Sales",
+  },
+];
