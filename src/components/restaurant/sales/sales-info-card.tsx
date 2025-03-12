@@ -1,12 +1,24 @@
+"use client";
+
+import { useState } from "react"
+import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card"
 import { CardHeading } from "@/components/card-heading"
-import { FileUp, Filter, Search } from "lucide-react"
+import { FileUp, Filter, Search, X } from "lucide-react"
 import { MdKeyboardArrowDown } from "react-icons/md"
 import { SalesDataTable } from "./sales-data-table"
 import { SalesData } from "@/lib/data";
 import { columns } from "./columns"
+import { SalesFilterModal } from "./sales-filter-modal";
 
 export const SalesInfoCard = () => {
+  const [openFilterModal, setOpenFilterModal] = useState<boolean>(false);
+
+  const openModal = () => {
+    setOpenFilterModal(!openFilterModal)
+  };
+
+
   return (
     <Card>
       <CardContent className="mt-[30px]">
@@ -19,8 +31,12 @@ export const SalesInfoCard = () => {
             <input type="text" placeholder="Search" className="w-[101px] h-[40px] pl-8 border-[1px] border-[#f4f4d4] rounded-[4px]" />
             <Search className="absolute top-2 left-1 size-6 text-textColor"/>
           </div>
-          <button className="flex items-center justify-center gap-2 bordr-[1px] border-[#f4f4f4] rounded-[4px] w-[87px] h-[40px] px-2 text-sm font-normal text-[#9A9FA5]">
+          <button className="flex items-center justify-center gap-2 bordr-[1px] border-[#f4f4f4] rounded-[4px] w-[87px] h-[40px] px-2 text-sm font-normal text-[#9A9FA5]" onClick={() => openModal()}>
+            {openFilterModal ? (
+              <X className="size-6 text-textColor"/>
+            ): (
             <Filter className="size-6 text-textColor"/>
+            )}
             Filter
           </button>
           <button className="flex items-center px-2 text-ms font-medium gap-2 bg-[#efefef] w-[114px] h-[40px] rounded-[4px] max-sm:hidden">
@@ -30,6 +46,18 @@ export const SalesInfoCard = () => {
           </button>
         </div>
         </div>
+        {openFilterModal && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.2 }}
+            className="sales-filter"
+          >
+            <SalesFilterModal
+              setOpenModal={openModal}
+            />
+          </motion.div>
+        )}
         <SalesDataTable data={SalesData} columns={columns}/>
       </CardContent>
     </Card>
