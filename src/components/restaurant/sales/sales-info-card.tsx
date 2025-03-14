@@ -31,7 +31,7 @@ export const SalesInfoCard = () => {
             <input type="text" placeholder="Search" className="w-[101px] h-[40px] pl-8 border-[1px] border-[#f4f4d4] rounded-[4px]" />
             <Search className="absolute top-2 left-1 size-6 text-textColor"/>
           </div>
-          <button className="flex items-center justify-center gap-2 bordr-[1px] border-[#f4f4f4] rounded-[4px] w-[87px] h-[40px] px-2 text-sm font-normal text-[#9A9FA5]" onClick={() => openModal()}>
+          <button className="flex items-center justify-center gap-2 border-[1px] border-[#f4f4f4] rounded-[4px] w-[87px] h-[40px] px-2 text-sm font-normal text-[#9A9FA5]" onClick={() => openModal()}>
             {openFilterModal ? (
               <X className="size-6 text-textColor"/>
             ): (

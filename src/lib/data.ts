@@ -1073,3 +1073,54 @@ export const SalesData = [
     numberOfSales: "70 Sales",
   },
 ];
+
+export const WalletData = [
+  {
+    id: 1,
+    type: "Earning",
+    orderId: "#10234",
+    date: "2 Feb 2025",
+    amount: "+GHC 240",
+    balance: "GHC 700",
+  },
+  {
+    id: 2,
+    type: "Withdraw",
+    orderId: "#10235",
+    date: "3 Feb 2025",
+    amount: "-GHC 200",
+    balance: "GHC 500",
+  },
+  {
+    id: 3,
+    type: "Earning",
+    orderId: "#10236",
+    date: "4 Feb 2025",
+    amount: "+GHC 120",
+    balance: "GHC 620",
+  },
+  {
+    id: 4,
+    type: "Earning",
+    orderId: "#10237",
+    date: "5 Feb 2025",
+    amount: "+GHC 200",
+    balance: "GHC 820",
+  },
+  {
+    id: 5,
+    type: "Earning",
+    orderId: "#10238",
+    date: "6 Feb 2025",
+    amount: "+GHC 450",
+    balance: "GHC 1270",
+  },
+  {
+    id: 6,
+    type: "Withdraw",
+    orderId: "#10239",
+    date: "7 Feb 2025",
+    amount: "-GHC 200",
+    balance: "GHC 1070",
+  },
+];

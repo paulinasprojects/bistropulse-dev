@@ -1,7 +1,8 @@
 import { X } from "lucide-react";
 import { CardHeading } from "@/components/card-heading";
 import { PriceRangeSlider } from "./price-range-slider";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { Label } from "@/components/ui/label";
 
 interface Props {
   setOpenModal: () => void;
@@ -18,8 +19,11 @@ export const SalesFilterModal = ({ setOpenModal }: Props) => {
       </div>
       <PriceRangeSlider/>
       <div className="mt-6 ml-2">
+        <Label htmlFor="category-type" className="block mb-2.5 text-sm font-medium">
+          Category
+        </Label>
         <Select>
-          <SelectTrigger className="w-[280px]">
+          <SelectTrigger id="category-type" className="w-[280px]">
             <SelectValue placeholder="Select category"/>
           </SelectTrigger>
           <SelectContent>
@@ -30,8 +34,11 @@ export const SalesFilterModal = ({ setOpenModal }: Props) => {
         </Select>
       </div>
       <div className="mt-6 ml-2">
+        <Label htmlFor="duration" className="block mb-2.5 text-sm font-medium">
+          Duration
+        </Label>
         <Select>
-          <SelectTrigger className="w-[280px]">
+          <SelectTrigger id="duration" className="w-[280px]">
             <SelectValue placeholder="Select duration"/>
           </SelectTrigger>
           <SelectContent>
@@ -41,9 +48,9 @@ export const SalesFilterModal = ({ setOpenModal }: Props) => {
           </SelectContent>
         </Select>
       </div>
-      <div className="flex items-center justify-center gap-3 mt-6">
-        <button className="w-[132px] h-[48px] rounded-[6px] border-[1px] border-[#C0C2C5] text-ms font-semibold">Clear Filter</button>
-        <button className="w-[136px] h-[48px] rounded-[6px] bg-buttonColor text-white text-ms font-semibold">Apply Filter</button>
+      <div className="flex items-center justify-center gap-3 mt-5">
+        <button className="w-[132px] h-[48px] rounded-[6px] border-[1px] border-[#C0C2C5] hover:bg-slate-50 transition-colors duration-75 text-ms font-semibold" onClick={setOpenModal}>Clear Filter</button>
+        <button className="w-[136px] h-[48px] rounded-[6px] bg-buttonColor hover:bg-buttonHover text-white text-ms font-semibold transition-colors duration-75" onClick={setOpenModal}>Apply Filter</button>
       </div>
     </div>
   )
