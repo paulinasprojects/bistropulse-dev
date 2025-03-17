@@ -1,23 +1,29 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useState } from "react";
-import { Card, CardContent } from "@/components/ui/card";
-import { CardHeading } from "@/components/card-heading";
+import { useRef, useState } from "react";
 import { SearchIcon, Filter, FileUp, X } from "lucide-react";
 import { MdKeyboardArrowDown } from "react-icons/md";
+import { CustomersListData } from "@/lib/data";
+import { useRouter } from "next/navigation";
+import { useClickOutside } from "@/lib/use-click-outside";
 import { FilterModalContent } from "./filter-modal-content";
 import { CustomersTable } from "./customers-table";
 import { columns } from "./columns";
-import { CustomersListData } from "@/lib/data";
-import { useRouter } from "next/navigation";
+import { Card, CardContent } from "@/components/ui/card";
+import { CardHeading } from "@/components/card-heading";
+
 
 export const CustomerListTable = () => {
+  const ref = useRef<HTMLDivElement>(null);
   const [openFilterModal, setOpenFilterModal] = useState<boolean>(false);
 
-  const OpenModal = () => {
+  const toggleModal = () => {
     setOpenFilterModal(!openFilterModal);
   };
+
+  useClickOutside(ref, () => setOpenFilterModal(false), "select-content");
+
 
   const router = useRouter();
 
@@ -34,7 +40,7 @@ export const CustomerListTable = () => {
                 <input type="text" placeholder="Search" className="w-[104px] h-[40px] pl-8 border-[1px] border-[#F4F4D4] rounded-[4px]" />
                 <SearchIcon className="absolute top-2 left-1 size-6 text-textColor"/>
               </div>
-              <button className="flex items-center justify-center gap-2 border-[1px] border-[#f4f4f4] rounded-[4px] w-[87px] h-[40px] px-2 text-ms font-normal text-[#9A9FA5]" onClick={() => OpenModal()}>
+              <button className="flex items-center justify-center gap-2 border-[1px] border-[#f4f4f4] rounded-[4px] w-[87px] h-[40px] px-2 text-ms font-normal text-[#9A9FA5]" onClick={() => toggleModal()}>
                 {openFilterModal ? (
                   <X className="size-6 text-textColor"/>
                 ) : (
@@ -56,8 +62,9 @@ export const CustomerListTable = () => {
               animate={{ opacity: 1, y:0 }}
               transition={{ duration: 0.2 }}
               className="customer-filter"
+              ref={ref}
             >
-              <FilterModalContent/>
+              <FilterModalContent setOpenModal={toggleModal}/>
             </motion.div>
           )}
           <CustomersTable columns={columns} data={CustomersListData}/>

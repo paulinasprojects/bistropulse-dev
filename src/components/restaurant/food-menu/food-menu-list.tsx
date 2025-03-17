@@ -1,24 +1,28 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { MdKeyboardArrowDown } from "react-icons/md";
+import { useState, useRef } from "react";
 import { useRouter } from "next/navigation";
 import { FileUp, Filter, SearchIcon, X } from "lucide-react";
-import { Card, CardContent } from "@/components/ui/card";
-import { CardHeading } from "@/components/card-heading";
-import { MdKeyboardArrowDown } from "react-icons/md";
+import { useClickOutside } from "@/lib/use-click-outside";
+import { FoodMenuListData } from "@/lib/data";
 import { FilterModal } from "./filter-modal";
 import { FoodMenuTable } from "./food-menu-table";
-import { FoodMenuListData } from "@/lib/data";
 import { columns } from "./columns";
+import { Card, CardContent } from "@/components/ui/card";
+import { CardHeading } from "@/components/card-heading";
 
 export const FoodMenuList = () => {
+  const ref = useRef(null)
   const [openFilterModal, setOpenFilterModal] = useState<boolean>(false);
   const router = useRouter();
 
   const openModal = () => {
     setOpenFilterModal(!openFilterModal)
   }
+
+  useClickOutside(ref, openModal)
 
   return (
     <>
@@ -55,6 +59,7 @@ export const FoodMenuList = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.2 }}
             className="customer-filter"
+            ref={ref}
           >
             <FilterModal/>
           </motion.div>

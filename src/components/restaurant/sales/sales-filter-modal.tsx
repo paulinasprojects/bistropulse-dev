@@ -1,3 +1,4 @@
+import { forwardRef } from "react";
 import { X } from "lucide-react";
 import { CardHeading } from "@/components/card-heading";
 import { PriceRangeSlider } from "./price-range-slider";
@@ -8,9 +9,9 @@ interface Props {
   setOpenModal: () => void;
 }
 
-export const SalesFilterModal = ({ setOpenModal }: Props) => {
+export const SalesFilterModal = forwardRef<HTMLDivElement, Props>(({setOpenModal}, ref) => {
   return (
-    <div className="px-6 py-6">
+    <div className="px-6 py-6" ref={ref}>
       <div className="flex items-center justify-between">
         <CardHeading
           title="Filter"
@@ -26,7 +27,7 @@ export const SalesFilterModal = ({ setOpenModal }: Props) => {
           <SelectTrigger id="category-type" className="w-[280px]">
             <SelectValue placeholder="Select category"/>
           </SelectTrigger>
-          <SelectContent>
+          <SelectContent className="select-content">
             <SelectItem value="pizza">Pizza</SelectItem>
             <SelectItem value="burger">Burger</SelectItem>
             <SelectItem value="pasta">Pasta</SelectItem>
@@ -41,7 +42,7 @@ export const SalesFilterModal = ({ setOpenModal }: Props) => {
           <SelectTrigger id="duration" className="w-[280px]">
             <SelectValue placeholder="Select duration"/>
           </SelectTrigger>
-          <SelectContent>
+          <SelectContent className="select-content">
             <SelectItem value="month">Month</SelectItem>
             <SelectItem value="last-6-months">Last 6 Months</SelectItem>
             <SelectItem value="year">Year</SelectItem>
@@ -54,4 +55,6 @@ export const SalesFilterModal = ({ setOpenModal }: Props) => {
       </div>
     </div>
   )
-}
+})
+
+SalesFilterModal.displayName = "SalesFilterModal";

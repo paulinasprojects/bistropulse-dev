@@ -1,8 +1,9 @@
 "use client";
 
-import {motion} from 'framer-motion';
+import { useState, useRef } from "react";
+import { motion } from 'framer-motion';
 import { useRouter } from "next/navigation";
-import { useState } from "react";
+import { useClickOutside } from '@/lib/use-click-outside';
 import { SearchIcon, Filter, FileUp, X } from "lucide-react";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { RestaurantsData } from "@/lib/data";
@@ -14,11 +15,14 @@ import { FilterModalContent } from "./filter-modal-content";
 import { Card, CardContent } from "@/components/ui/card";
 
 export const RestaurantManagementTable = () => {
+  const ref = useRef<HTMLDivElement>(null);
   const [filterModalOpen, setFilterModalOpen] = useState<boolean>(false);
 
   const OpenFilterModal = () => {
     setFilterModalOpen(!filterModalOpen)
   };
+
+  useClickOutside(ref, () => setFilterModalOpen(false), "select-content")
 
   const router = useRouter();
 
@@ -56,8 +60,10 @@ export const RestaurantManagementTable = () => {
               initial={{ opacity: 0, y:20 }}
               animate={{ opacity: 1, y:0 }}
               transition={{ duration: 0.2 }} 
-              className="test-classname">
-              <FilterModalContent/>
+              className="test-classname"
+              ref={ref}
+            >
+              <FilterModalContent setOpenModal={OpenFilterModal}/>
             </motion.div>
           )}
         <RestaurantTable columns={columns} data={RestaurantsData}/>

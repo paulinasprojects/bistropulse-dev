@@ -1,23 +1,27 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { motion } from "framer-motion";
-import { Search, Filter, FileUp, X } from "lucide-react"
-import { WalletData } from "@/lib/data"
-import { Card, CardContent } from "@/components/ui/card"
-import { CardHeading } from "@/components/card-heading"
 import { MdKeyboardArrowDown } from "react-icons/md"
+import { Search, Filter, FileUp, X } from "lucide-react"
+import { WalletData } from "@/lib/data";
+import { useClickOutside } from "@/lib/use-click-outside";
 import { WalletDataTable } from "./wallet-data-table"
 import { columns } from "./columns";
 import { WalletFilterModal } from "./wallet-filter-modal";
+import { Card, CardContent } from "@/components/ui/card"
+import { CardHeading } from "@/components/card-heading"
 
 
 export const WalletCard = () => {
+  const ref = useRef<HTMLDivElement>(null);
   const [openFilterModal, setOpenFilterModal]  = useState<boolean>(false);
 
   const openModal = () => {
     setOpenFilterModal(!openFilterModal)
   };
+
+  useClickOutside(ref, () => setOpenFilterModal(false), "select-content");
 
 
   return (
@@ -53,6 +57,7 @@ export const WalletCard = () => {
             animate={{ opacity: 1, y:0 }}
             transition={{ duration: 0.2 }}
             className="wallet-filter"
+            ref={ref}
           >
             <WalletFilterModal
               setOpenModal={openModal}

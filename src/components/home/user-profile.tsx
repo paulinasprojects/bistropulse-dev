@@ -1,16 +1,20 @@
 "use client";
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { Bell,MessageSquareText } from "lucide-react";
 import Image from "next/image";
 import { UserProfileNotificationsModal } from "./user-profile-notifications-modal";
+import { useClickOutside } from "@/lib/use-click-outside";
 
 export const UserProfile = () => {
+  const menuRef = useRef(null);
   const [openNotificationsModal, setOpenNotificationsModal] = useState<boolean>(false);
 
   const openModal = () => {
     setOpenNotificationsModal(!openNotificationsModal)
   };
+
+  useClickOutside(menuRef, openModal)
 
 
   return (
@@ -39,6 +43,7 @@ export const UserProfile = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y:0 }} 
         className="user-profile-modal"
+        ref={menuRef}
       >
         <UserProfileNotificationsModal setOpenModal={openModal}/>
       </motion.div>

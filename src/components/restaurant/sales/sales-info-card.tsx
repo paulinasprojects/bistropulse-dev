@@ -1,22 +1,26 @@
 "use client";
 
-import { useState } from "react"
+import { useState, useRef } from "react"
 import { motion } from "framer-motion";
-import { Card, CardContent } from "@/components/ui/card"
-import { CardHeading } from "@/components/card-heading"
+import { SalesData } from "@/lib/data";
+import { useClickOutside } from "@/lib/use-click-outside";
 import { FileUp, Filter, Search, X } from "lucide-react"
 import { MdKeyboardArrowDown } from "react-icons/md"
-import { SalesDataTable } from "./sales-data-table"
-import { SalesData } from "@/lib/data";
 import { columns } from "./columns"
 import { SalesFilterModal } from "./sales-filter-modal";
+import { Card, CardContent } from "@/components/ui/card"
+import { CardHeading } from "@/components/card-heading"
+import { SalesDataTable } from "./sales-data-table"
 
 export const SalesInfoCard = () => {
+  const ref = useRef<HTMLDivElement>(null);
   const [openFilterModal, setOpenFilterModal] = useState<boolean>(false);
 
   const openModal = () => {
     setOpenFilterModal(!openFilterModal)
   };
+
+  useClickOutside(ref, () =>  setOpenFilterModal(false), "select-content")
 
 
   return (
@@ -52,6 +56,7 @@ export const SalesInfoCard = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.2 }}
             className="sales-filter"
+            ref={ref}
           >
             <SalesFilterModal
               setOpenModal={openModal}

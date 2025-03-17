@@ -1,3 +1,4 @@
+import { forwardRef } from "react";
 import { X } from "lucide-react";
 import { CardHeading } from "@/components/card-heading";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
@@ -8,9 +9,9 @@ interface WalletFilterModalProps {
   setOpenModal: () => void
 }
 
-export const WalletFilterModal = ({ setOpenModal }: WalletFilterModalProps) => {
+export const WalletFilterModal = forwardRef<HTMLDivElement, WalletFilterModalProps>(({setOpenModal}, ref) => {
   return (
-    <div className="px-6 py-6">
+    <div className="px-6 py-6" ref={ref}>
       <div className="flex items-center justify-between">
         <CardHeading
           title="Filter"
@@ -31,7 +32,7 @@ export const WalletFilterModal = ({ setOpenModal }: WalletFilterModalProps) => {
           <SelectTrigger id="wallet-type" className="w-[280px]">
             <SelectValue placeholder="Select type"/>
           </SelectTrigger>
-          <SelectContent>
+          <SelectContent className="select-content">
             <SelectItem value="earning">Earning</SelectItem>
             <SelectItem value="withdrawal">Withdrawal</SelectItem>
           </SelectContent>
@@ -43,4 +44,7 @@ export const WalletFilterModal = ({ setOpenModal }: WalletFilterModalProps) => {
       </div>
     </div>
   )
-}
+});
+
+
+WalletFilterModal.displayName = "WalletFilterModal";
