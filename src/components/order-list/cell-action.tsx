@@ -22,7 +22,7 @@ export const CellAction = () => {
         </DropdownMenuLabel>
         <DropdownMenuItem 
             className="cursor-pointer" 
-            onClick={() => router.push("/restaurant-management/restaurant/1/orders/order-list/order/1")}
+            onClick={() => router.push("/restaurant-management/restaurant/1/orders/1")}
           >
             <Eye className="size-4"/>
             View
