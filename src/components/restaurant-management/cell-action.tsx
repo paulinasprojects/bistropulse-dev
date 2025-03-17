@@ -35,7 +35,7 @@ export const CellAction = ({ data }: Props) => {
           <CopyIcon className="h-4 w-4"/>
           Copy Id
         </DropdownMenuItem>
-        <DropdownMenuItem className="cursor-pointer" onClick={() => router.push(`/restaurant-management/restaurant/${data.id}`,)}>
+        <DropdownMenuItem className="cursor-pointer" onClick={() => router.push(`/restaurant-management/restaurant/${data.id}/overview`,)}>
           <Eye className="h-4 w-4"/>
           View
         </DropdownMenuItem>

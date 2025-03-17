@@ -16,7 +16,7 @@ export const RestaurantNavbar = () => {
           <div className="hidden lg:flex items-center gap-[7px]">
             <Link href="/restaurant-management" className="text-sm font-medium hover:text-buttonColor">Restaurant Management</Link>
             <MdKeyboardArrowRight />
-            <Link href="/restaurant-management/restaurant/1" className="text-xs font-normal text-textColor hover:text-buttonColor">
+            <Link href="/restaurant-management/restaurant/1/overview" className="text-xs font-normal text-textColor hover:text-buttonColor">
               Restaurant
             </Link>
           </div>
